@@ -1,0 +1,11 @@
+{
+    "modules": [
+        { 
+            "dir" : "src"
+        }     
+     ],
+    "expose": [
+        "hello/world",
+        "hello/greetings"
+    ]
+}

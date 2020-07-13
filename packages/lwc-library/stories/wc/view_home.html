@@ -1,0 +1,37 @@
+<template>
+    <community_layout-slds-one-col-layout>
+        <slot slot="header">
+            <b2c_lite_commerce-hero-banner-ui
+                slogan="Run a marathon or climb a mountain, we've got the right footwear for any occasion."
+                slogan-color="#fff"
+                title="Built For The Path Less Traveled"
+                title-color="#fff"
+                resource-url="/assets/images/homepage/home-banner-hero-06-1905-600.jpg"
+                resource-alt="Alternate Text"
+                overlay='false'
+                show-banner-link='true'
+                banner-link-title="Shop Now"
+                display-banner-link-as-button='true'
+                hero-text-position="center"
+            >
+            </b2c_lite_commerce-hero-banner-ui>
+        </slot>
+        <slot slot="content">
+            <b2c_lite_commerce-shop-category
+                header-text="Shop By Category"
+                page-size='6'
+                browse-step='3'            
+            >
+            </b2c_lite_commerce-shop-category>
+            <b2c_lite_commerce-top-sellers
+                category-id="0ZGxx00000004WfGAI"
+                header-text="Recommended For You"
+                page-size='6'
+                browse-step='3'            
+            >        
+            </b2c_lite_commerce-top-sellers>        
+        </slot>
+        <slot slot="footer">
+        </slot>
+    </community_layout-slds-one-col-layout>
+</template>

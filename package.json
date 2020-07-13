@@ -1,0 +1,29 @@
+{
+  "name": "lwc-wca",
+  "version": "1.6.0",
+  "description": "Sample LWC project to integrate with Web Component Analyzer",
+  "private": true,
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "build": "lerna run build --stream",
+    "start": "lerna run start --scope lwc-app --stream",
+    "clean": "lerna run clean --stream",
+    "test": "lerna run test --stream",
+    "build-static": "lerna run storybook:build-static --stream",
+    "deploy-static": "gh-pages-deploy"
+  },
+  "devDependencies": {
+    "gh-pages-deploy": "0.5.1"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/lwc-library",
+      "packages/lwc-app"
+    ]
+  },
+  "gh-pages-deploy": {
+    "staticpath": "static-site",
+    "commit": "Storybook static site",
+    "noprompt": false
+  }
+}
