@@ -1,0 +1,16 @@
+{
+  "stories": {
+    "welcome--welcome": {
+      "id": "welcome--welcome",
+      "kind": "Welcome",
+      "name": "Welcome",
+      "story": "Welcome",
+      "parameters": {
+        "argTypes": {},
+        "framework": "web-components",
+        "fileName": 169
+      },
+      "args": {}
+    }
+  }
+}
