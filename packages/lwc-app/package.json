@@ -49,8 +49,10 @@
         "@storybook/core-events": "6.0.0-rc.3",
         "@storybook/source-loader": "6.0.0-rc.3",
         "@storybook/web-components": "6.0.0-rc.3",
-
+        
+        "@storybook/cli": "6.0.0-rc.3",
         "lit-html": "^1.2.1",
+        "npm-run-all": "4.1.5",
         "web-component-analyzer": "^1.0.3"
     },
     "engines": {
@@ -63,13 +65,14 @@
         "serve": "node index.js",
         "start": "concurrently --kill-others \"yarn build --watch\" \"yarn serve\"",
 
-        "storybook": "yarn storybook:build && yarn storybook:start",
+        "storybook": "run-p storybook:buildlwcw storybook:start",
         "storybook:build": "yarn storybook:meta && yarn storybook:buildlwc",
         "storybook:meta": "web-component-analyzer src --outFiles .storybook/build/custom-elements.json",
         "storybook:buildlwc": "rollup -c ./.storybook/rollup.config.js",
+        "storybook:buildlwcw": "rollup -w -c ./.storybook/rollup.config.js",
         "storybook:start": "start-storybook -s ./dist -p 6010",
         "storybook:build-static": "yarn storybook:build && yarn build-storybook",
-        "build-storybook": "build-storybook -c .storybook -o ../../static-site/lwc-app && sb extract ../../static-site/lwc-app ../../static-site/lwc-app/stories.json",
+        "build-storybook": "build-storybook -c .storybook -o ../../static-site/lwc-library && sb extract ../../static-site/lwc-library  ../../static-site/lwc-library/stories.json",
         "deploy-storybook": "storybook-to-ghpages -e .storybook/build/static-site"
     },
 
