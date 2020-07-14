@@ -1,182 +1,26 @@
 {
   "stories": {
-    "docs-greetings--simple": {
-      "id": "docs-greetings--simple",
-      "kind": "Docs/Greetings",
-      "name": "Simple",
-      "story": "Simple",
-      "parameters": {
-        "argTypes": {},
-        "framework": "web-components",
-        "fileName": 171
-      },
-      "args": {}
-    },
-    "hello-greetings-knobs--default": {
-      "id": "hello-greetings-knobs--default",
-      "kind": "hello-greetings-knobs",
-      "name": "Default",
-      "story": "Default",
-      "parameters": {
-        "argTypes": {
-          "name": {
-            "name": "name",
-            "required": false,
-            "description": "This is a property that can be set from an attribute",
-            "type": {
-              "name": "string"
-            },
-            "table": {
-              "category": "properties",
-              "type": {
-                "summary": "string"
-              },
-              "defaultValue": {
-                "summary": "\"\""
-              }
-            }
-          },
-          "time": {
-            "name": "time",
-            "required": false,
-            "description": "This is a property that comes from a wire adapter",
-            "type": {
-              "name": "string"
-            },
-            "table": {
-              "category": "properties",
-              "type": {
-                "summary": "string"
-              },
-              "defaultValue": {
-                "summary": "\"\""
-              }
-            }
-          },
-          "message": {
-            "name": "message",
-            "required": false,
-            "description": "This is a simple property",
-            "type": {
-              "name": "string"
-            },
-            "table": {
-              "category": "properties",
-              "type": {
-                "summary": "string"
-              },
-              "defaultValue": {
-                "summary": "\"Glad to see you\""
-              }
-            }
-          },
-          "greetings": {
-            "name": "greetings",
-            "required": false,
-            "type": {
-              "name": "string"
-            },
-            "table": {
-              "category": "properties",
-              "type": {
-                "summary": "string"
-              },
-              "defaultValue": {}
-            }
-          }
-        },
-        "framework": "web-components",
-        "fileName": 172
-      },
-      "args": {}
-    },
-    "hello-greetings--default": {
-      "id": "hello-greetings--default",
-      "kind": "hello-greetings",
-      "name": "Default",
-      "story": "Default",
-      "parameters": {
-        "argTypes": {
-          "name": {
-            "name": "name",
-            "required": false,
-            "description": "This is a property that can be set from an attribute",
-            "type": {
-              "name": "string"
-            },
-            "table": {
-              "category": "properties",
-              "type": {
-                "summary": "string"
-              },
-              "defaultValue": {
-                "summary": "\"\""
-              }
-            }
-          },
-          "time": {
-            "name": "time",
-            "required": false,
-            "description": "This is a property that comes from a wire adapter",
-            "type": {
-              "name": "string"
-            },
-            "table": {
-              "category": "properties",
-              "type": {
-                "summary": "string"
-              },
-              "defaultValue": {
-                "summary": "\"\""
-              }
-            }
-          },
-          "message": {
-            "name": "message",
-            "required": false,
-            "description": "This is a simple property",
-            "type": {
-              "name": "string"
-            },
-            "table": {
-              "category": "properties",
-              "type": {
-                "summary": "string"
-              },
-              "defaultValue": {
-                "summary": "\"Glad to see you\""
-              }
-            }
-          },
-          "greetings": {
-            "name": "greetings",
-            "required": false,
-            "type": {
-              "name": "string"
-            },
-            "table": {
-              "category": "properties",
-              "type": {
-                "summary": "string"
-              },
-              "defaultValue": {}
-            }
-          }
-        },
-        "framework": "web-components",
-        "fileName": 173
-      },
-      "args": {}
-    },
-    "hello-world--default": {
-      "id": "hello-world--default",
-      "kind": "hello-world",
+    "application-main--default": {
+      "id": "application-main--default",
+      "kind": "Application Main",
       "name": "Default",
       "story": "Default",
       "parameters": {
         "argTypes": {},
         "framework": "web-components",
-        "fileName": 174
+        "fileName": 169
+      },
+      "args": {}
+    },
+    "welcome--welcome": {
+      "id": "welcome--welcome",
+      "kind": "Welcome",
+      "name": "Welcome",
+      "story": "Welcome",
+      "parameters": {
+        "argTypes": {},
+        "framework": "web-components",
+        "fileName": 170
       },
       "args": {}
     }
