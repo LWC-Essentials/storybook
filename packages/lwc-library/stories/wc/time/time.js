@@ -4,6 +4,11 @@ export default class Time extends LightningElement {
 
     @api data;
 
+    get tt() {
+        console.log("TT BEJO")
+        return "AAA"
+    }
+
     get time() {
         const data = this.data;
         if(data) {

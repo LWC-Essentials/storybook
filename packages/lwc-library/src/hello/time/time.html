@@ -3,6 +3,8 @@
         {time.hours}:{time.minutes}:{time.seconds}
     </template>
     <template if:true={invalid}>
-        <span style="color: red">Ouch, the time is invalid</span>
+        <span style="color: red">
+            Ouch, the time value is invalid! {timeAsString}
+        </span>
     </template>
 </template>

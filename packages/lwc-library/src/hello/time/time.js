@@ -35,6 +35,18 @@ export default class DisplayTime extends LightningElement {
         }
         return false;
     }
+
+
+    get timeAsString() {
+        const time = this.time;
+        if(time===null) {
+            return "[null]";
+        }
+        if(time===undefined) {
+            return "[undefined]";
+        }
+        return "[" + (typeof time) + "] " +  JSON.stringify(time,null,"  ");
+    }
 }
 
 //customElements.define("hello-time", buildCustomElementConstructor(DisplayTime));

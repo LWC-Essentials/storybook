@@ -209,14 +209,19 @@ yarn deploy-static
 ### Complex properties
 LWC components can consume complex property values, like objects. Unfortunately, the custom element specification does not allow such values to ba passed through HTML markup.  
 
-There are multiple solutions:  
+There are multiple solutions: 
+
+- Use LitElement template syntax  
+  The `html` syntax allows properties to be passed as any value when the its name starts with a dot `.`. Here is an example, where the time is passed as an object:  
+  
+  ```
+  export const staticTime = () => html`
+    <hello-time .time=${{hours:1,minutes:3,seconds:4}}></hello-time>
+  `;
+  ```
 
 - Create a technical Web Component that wraps the desired one, and pass it complex parameters via the template  
-  The library demo defines these components is the `wc` namespace located in `stories`.
-- 
-
-### Development watchers
-
+  The library demo defines these components is the `wc` namespace located in `stories`. Note that the syntax above should be preferred in most cases, as it is simplier. 
 
 
 ### Provided add-ons
