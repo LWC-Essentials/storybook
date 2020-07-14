@@ -2,6 +2,9 @@
     "modules": [
         { 
             "dir" : "src"
+        },
+        { 
+            "dir" : "stories"
         }     
      ],
     "expose": [

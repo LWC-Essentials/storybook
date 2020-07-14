@@ -1,0 +1,8 @@
+<template>
+    <template if:false={invalid}>
+        {time.hours}:{time.minutes}:{time.seconds}
+    </template>
+    <template if:true={invalid}>
+        <span style="color: red">Ouch, the time is invalid</span>
+    </template>
+</template>

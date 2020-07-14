@@ -26,7 +26,11 @@ export class Time {
 
     emitTime() {
         const now = new Date();
-        const time = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`
+        const time = {
+            hours:now.getHours(), 
+            minutes:now.getMinutes(), 
+            seconds:now.getSeconds()
+        }    
         this.dataCallback(time);
     }
 }

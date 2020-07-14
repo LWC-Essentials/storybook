@@ -4,5 +4,7 @@
  * server.
  */
 import buildAndRegisterCustomElement from '../.storybook/utils/build-custom-element';
+import AppMain from 'app/main';
 
-// Add components
+// Register components
+buildAndRegisterCustomElement('app-main', AppMain);

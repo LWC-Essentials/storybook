@@ -19,7 +19,7 @@ export default class Greetings extends LightningElement {
     /**
      * This is a property that comes from a wire adapter
      */
-    @wire(Time) time = '';
+    @wire(Time) time = {};
 
     /**
      * This is a simple property

@@ -1,5 +1,8 @@
 {
     "modules": [
+        { 
+            "dir" : "src"
+        },
         {
             "npm":  "lwc-library"
         }

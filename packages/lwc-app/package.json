@@ -71,5 +71,10 @@
         "storybook:build-static": "yarn storybook:build && yarn build-storybook",
         "build-storybook": "build-storybook -c .storybook -o ../../static-site/lwc-app && sb extract ../../static-site/lwc-app ../../static-site/lwc-app/stories.json",
         "deploy-storybook": "storybook-to-ghpages -e .storybook/build/static-site"
+    },
+
+    "storybook": {
+        "title": "LWC Application Example",    
+        "url": "https://lwc-essentials.github.io/storybook/lwc-app"
     }
 }
