@@ -16,13 +16,12 @@ module.exports = {
     '@storybook/addon-a11y',
     '@storybook/addon-actions',
     '@storybook/addon-backgrounds',
-    '@storybook/addon-knobs',
     '@storybook/addon-links',
     '@storybook/addon-storysource',
     '@storybook/addon-viewport',
   ],
 
-  // Custom webpack configm, if necessary
+  // Custom webpack config, if necessary
   // https://storybook.js.org/docs/configurations/custom-webpack-config/#webpack-customisation-modes/
   webpackFinal: (config) => {
     return config

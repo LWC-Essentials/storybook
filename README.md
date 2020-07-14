@@ -179,8 +179,7 @@ Without creating the documentation, a static story only displaying content can e
 Here is an example: [https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-app/stories/welcome.stories.js](https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-app/stories/welcome.stories.js).  
 
 #### Interacting with the components
-The project shows how to display component attributes & properties using [Controls](https://github.com/storybookjs/storybook/blob/next/addons/controls/README.md#writing-stories). The stories for the `hello-greetings` demonstrate different variations.  
-Note that [Knobs](https://github.com/storybookjs/storybook/tree/master/addons/knobs) are still supported but deprecated. One should use Controls instead.
+The project shows how to display component attributes & properties using [Controls](https://github.com/storybookjs/storybook/blob/next/addons/controls/README.md#writing-stories). The stories for the `hello-greetings` demonstrate different variations.
 
 See this example: [https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-library/stories/hello-greetings.stories.js](https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-library/stories/hello-greetings.stories.js)
 
@@ -226,8 +225,6 @@ The sample app configures a set of add-ons
 
 - [@storybook/addon-docs](https://www.npmjs.com/package/@storybook/addon-docs)  
    Docs transforms your Storybook stories into world-class component documentation.
-- [@storybook/addon-knobs](https://www.npmjs.com/package/@storybook/addon-knobs)  
-  Knobs allow you to edit props dynamically using the Storybook UI.  
 - [@storybook/addon-a11y](https://www.npmjs.com/package/@storybook/addon-a11y)  
   Check the accessibility of a component. It shows any potential issue in a panel.  
 - [@storybook/addon-storysource](https://www.npmjs.com/package/@storybook/addon-storysource)  

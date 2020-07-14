@@ -1,10 +1,8 @@
-import { withKnobs, text } from '@storybook/addon-knobs';
 import { html } from 'lit-html';
 
 export default {
     title: 'Hello Greetings',
-    component: 'hello-greetings',
-    decorators: [withKnobs]
+    component: 'hello-greetings'
 };
 
 export const Default = () => html`
@@ -30,8 +28,3 @@ ControlsCustom.argTypes = {
     message: { control: { disable: true } },
     greetings: { control: { disable: true } },
 };
-
-export const knobs = () => html`
-    <b>This is old stuff, prefer the use of Controls</b><br/><br/>
-    <hello-greetings name="${text('Name','')}" message="${text('Message','')}"></hello-greetings>
-`;
