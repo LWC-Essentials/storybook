@@ -8,7 +8,7 @@
       "parameters": {
         "argTypes": {},
         "framework": "web-components",
-        "fileName": 169
+        "fileName": 166
       },
       "args": {}
     },
@@ -20,7 +20,7 @@
       "parameters": {
         "argTypes": {},
         "framework": "web-components",
-        "fileName": 170
+        "fileName": 167
       },
       "args": {}
     }
