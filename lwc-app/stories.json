@@ -1,5 +1,17 @@
 {
   "stories": {
+    "application-main--default": {
+      "id": "application-main--default",
+      "kind": "Application Main",
+      "name": "Default",
+      "story": "Default",
+      "parameters": {
+        "argTypes": {},
+        "framework": "web-components",
+        "fileName": 169
+      },
+      "args": {}
+    },
     "welcome--welcome": {
       "id": "welcome--welcome",
       "kind": "Welcome",
@@ -8,7 +20,7 @@
       "parameters": {
         "argTypes": {},
         "framework": "web-components",
-        "fileName": 169
+        "fileName": 170
       },
       "args": {}
     }

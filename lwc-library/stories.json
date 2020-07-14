@@ -1,26 +1,530 @@
 {
   "stories": {
-    "application-main--default": {
-      "id": "application-main--default",
-      "kind": "Application Main",
+    "docs-greetings--simple": {
+      "id": "docs-greetings--simple",
+      "kind": "Docs/Greetings",
+      "name": "Simple",
+      "story": "Simple",
+      "parameters": {
+        "argTypes": {},
+        "framework": "web-components",
+        "fileName": 171
+      },
+      "args": {}
+    },
+    "hello-greetings-knobs--default": {
+      "id": "hello-greetings-knobs--default",
+      "kind": "hello-greetings-knobs",
+      "name": "Default",
+      "story": "Default",
+      "parameters": {
+        "argTypes": {
+          "name": {
+            "name": "name",
+            "required": false,
+            "description": "This is a property that can be set from an attribute",
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {
+                "summary": "\"\""
+              }
+            }
+          },
+          "time": {
+            "name": "time",
+            "required": false,
+            "description": "This is a property that comes from a wire adapter",
+            "type": {
+              "name": "object"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "object"
+              },
+              "defaultValue": {
+                "summary": "{}"
+              }
+            }
+          },
+          "message": {
+            "name": "message",
+            "required": false,
+            "description": "This is a simple property",
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {
+                "summary": "\"Glad to see you\""
+              }
+            }
+          },
+          "greetings": {
+            "name": "greetings",
+            "required": false,
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 172
+      },
+      "args": {}
+    },
+    "hello-greetings--default": {
+      "id": "hello-greetings--default",
+      "kind": "hello-greetings",
+      "name": "Default",
+      "story": "Default",
+      "parameters": {
+        "argTypes": {
+          "name": {
+            "name": "name",
+            "required": false,
+            "description": "This is a property that can be set from an attribute",
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {
+                "summary": "\"\""
+              }
+            }
+          },
+          "time": {
+            "name": "time",
+            "required": false,
+            "description": "This is a property that comes from a wire adapter",
+            "type": {
+              "name": "object"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "object"
+              },
+              "defaultValue": {
+                "summary": "{}"
+              }
+            }
+          },
+          "message": {
+            "name": "message",
+            "required": false,
+            "description": "This is a simple property",
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {
+                "summary": "\"Glad to see you\""
+              }
+            }
+          },
+          "greetings": {
+            "name": "greetings",
+            "required": false,
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 173
+      },
+      "args": {}
+    },
+    "display-time--default": {
+      "id": "display-time--default",
+      "kind": "Display time",
+      "name": "Default",
+      "story": "Default",
+      "parameters": {
+        "argTypes": {
+          "time": {
+            "name": "time",
+            "required": false,
+            "description": "Time passed as a complex object.",
+            "type": {
+              "name": "{ hours: number; minutes: number; seconds: number; }"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "{ hours: number; minutes: number; seconds: number; }"
+              },
+              "defaultValue": {
+                "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
+              }
+            }
+          },
+          "invalid": {
+            "name": "invalid",
+            "required": false,
+            "type": {
+              "name": "boolean"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "boolean"
+              },
+              "defaultValue": {}
+            }
+          },
+          "timeAsString": {
+            "name": "timeAsString",
+            "required": false,
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 174
+      },
+      "args": {}
+    },
+    "display-time--static-null-time": {
+      "id": "display-time--static-null-time",
+      "kind": "Display time",
+      "name": "Static Null Time",
+      "story": "Static Null Time",
+      "parameters": {
+        "argTypes": {
+          "time": {
+            "name": "time",
+            "required": false,
+            "description": "Time passed as a complex object.",
+            "type": {
+              "name": "{ hours: number; minutes: number; seconds: number; }"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "{ hours: number; minutes: number; seconds: number; }"
+              },
+              "defaultValue": {
+                "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
+              }
+            }
+          },
+          "invalid": {
+            "name": "invalid",
+            "required": false,
+            "type": {
+              "name": "boolean"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "boolean"
+              },
+              "defaultValue": {}
+            }
+          },
+          "timeAsString": {
+            "name": "timeAsString",
+            "required": false,
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 174
+      },
+      "args": {}
+    },
+    "display-time--static-time": {
+      "id": "display-time--static-time",
+      "kind": "Display time",
+      "name": "Static Time",
+      "story": "Static Time",
+      "parameters": {
+        "argTypes": {
+          "time": {
+            "name": "time",
+            "required": false,
+            "description": "Time passed as a complex object.",
+            "type": {
+              "name": "{ hours: number; minutes: number; seconds: number; }"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "{ hours: number; minutes: number; seconds: number; }"
+              },
+              "defaultValue": {
+                "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
+              }
+            }
+          },
+          "invalid": {
+            "name": "invalid",
+            "required": false,
+            "type": {
+              "name": "boolean"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "boolean"
+              },
+              "defaultValue": {}
+            }
+          },
+          "timeAsString": {
+            "name": "timeAsString",
+            "required": false,
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 174
+      },
+      "args": {}
+    },
+    "display-time--null-time": {
+      "id": "display-time--null-time",
+      "kind": "Display time",
+      "name": "Null Time",
+      "story": "Null Time",
+      "parameters": {
+        "argTypes": {
+          "time": {
+            "name": "time",
+            "required": false,
+            "description": "Time passed as a complex object.",
+            "type": {
+              "name": "{ hours: number; minutes: number; seconds: number; }"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "{ hours: number; minutes: number; seconds: number; }"
+              },
+              "defaultValue": {
+                "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
+              }
+            }
+          },
+          "invalid": {
+            "name": "invalid",
+            "required": false,
+            "type": {
+              "name": "boolean"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "boolean"
+              },
+              "defaultValue": {}
+            }
+          },
+          "timeAsString": {
+            "name": "timeAsString",
+            "required": false,
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 174
+      },
+      "args": {}
+    },
+    "display-time--empty-time": {
+      "id": "display-time--empty-time",
+      "kind": "Display time",
+      "name": "Empty Time",
+      "story": "Empty Time",
+      "parameters": {
+        "argTypes": {
+          "time": {
+            "name": "time",
+            "required": false,
+            "description": "Time passed as a complex object.",
+            "type": {
+              "name": "{ hours: number; minutes: number; seconds: number; }"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "{ hours: number; minutes: number; seconds: number; }"
+              },
+              "defaultValue": {
+                "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
+              }
+            }
+          },
+          "invalid": {
+            "name": "invalid",
+            "required": false,
+            "type": {
+              "name": "boolean"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "boolean"
+              },
+              "defaultValue": {}
+            }
+          },
+          "timeAsString": {
+            "name": "timeAsString",
+            "required": false,
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 174
+      },
+      "args": {}
+    },
+    "display-time--fixed-time": {
+      "id": "display-time--fixed-time",
+      "kind": "Display time",
+      "name": "Fixed Time",
+      "story": "Fixed Time",
+      "parameters": {
+        "argTypes": {
+          "time": {
+            "name": "time",
+            "required": false,
+            "description": "Time passed as a complex object.",
+            "type": {
+              "name": "{ hours: number; minutes: number; seconds: number; }"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "{ hours: number; minutes: number; seconds: number; }"
+              },
+              "defaultValue": {
+                "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
+              }
+            }
+          },
+          "invalid": {
+            "name": "invalid",
+            "required": false,
+            "type": {
+              "name": "boolean"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "boolean"
+              },
+              "defaultValue": {}
+            }
+          },
+          "timeAsString": {
+            "name": "timeAsString",
+            "required": false,
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 174
+      },
+      "args": {}
+    },
+    "hello-world--default": {
+      "id": "hello-world--default",
+      "kind": "hello-world",
       "name": "Default",
       "story": "Default",
       "parameters": {
         "argTypes": {},
         "framework": "web-components",
-        "fileName": 169
-      },
-      "args": {}
-    },
-    "welcome--welcome": {
-      "id": "welcome--welcome",
-      "kind": "Welcome",
-      "name": "Welcome",
-      "story": "Welcome",
-      "parameters": {
-        "argTypes": {},
-        "framework": "web-components",
-        "fileName": 170
+        "fileName": 175
       },
       "args": {}
     }
