@@ -1,10 +1,10 @@
 {
   "stories": {
-    "docs-greetings--simple": {
-      "id": "docs-greetings--simple",
+    "docs-greetings--simple-documentation": {
+      "id": "docs-greetings--simple-documentation",
       "kind": "Docs/Greetings",
-      "name": "Simple",
-      "story": "Simple",
+      "name": "Simple Documentation",
+      "story": "Simple Documentation",
       "parameters": {
         "argTypes": {},
         "framework": "web-components",
@@ -12,9 +12,9 @@
       },
       "args": {}
     },
-    "hello-greetings-knobs--default": {
-      "id": "hello-greetings-knobs--default",
-      "kind": "hello-greetings-knobs",
+    "hello-greetings--default": {
+      "id": "hello-greetings--default",
+      "kind": "Hello Greetings",
       "name": "Default",
       "story": "Default",
       "parameters": {
@@ -90,11 +90,289 @@
       },
       "args": {}
     },
-    "hello-greetings--default": {
-      "id": "hello-greetings--default",
-      "kind": "hello-greetings",
-      "name": "Default",
-      "story": "Default",
+    "hello-greetings--controls": {
+      "id": "hello-greetings--controls",
+      "kind": "Hello Greetings",
+      "name": "Controls",
+      "story": "Controls",
+      "parameters": {
+        "argTypes": {
+          "name": {
+            "control": {
+              "type": "text"
+            },
+            "name": "name",
+            "required": false,
+            "description": "This is a property that can be set from an attribute",
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {
+                "summary": "\"\""
+              }
+            }
+          },
+          "time": {
+            "control": {
+              "type": "object"
+            },
+            "name": "time",
+            "required": false,
+            "description": "This is a property that comes from a wire adapter",
+            "type": {
+              "name": "object"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "object"
+              },
+              "defaultValue": {
+                "summary": "{}"
+              }
+            }
+          },
+          "message": {
+            "control": {
+              "type": "text"
+            },
+            "name": "message",
+            "required": false,
+            "description": "This is a simple property",
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {
+                "summary": "\"Glad to see you\""
+              }
+            }
+          },
+          "greetings": {
+            "control": {
+              "type": "text"
+            },
+            "name": "greetings",
+            "required": false,
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 172
+      },
+      "args": {}
+    },
+    "hello-greetings--controls-default-value": {
+      "id": "hello-greetings--controls-default-value",
+      "kind": "Hello Greetings",
+      "name": "Controls Default Value",
+      "story": "Controls Default Value",
+      "parameters": {
+        "args": {
+          "name": "Sentenza, the bad"
+        },
+        "argTypes": {
+          "name": {
+            "control": {
+              "type": "text"
+            },
+            "name": "name",
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": "This is a property that can be set from an attribute",
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {
+                "summary": "\"\""
+              }
+            }
+          },
+          "time": {
+            "control": {
+              "type": "object"
+            },
+            "name": "time",
+            "required": false,
+            "description": "This is a property that comes from a wire adapter",
+            "type": {
+              "name": "object"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "object"
+              },
+              "defaultValue": {
+                "summary": "{}"
+              }
+            }
+          },
+          "message": {
+            "control": {
+              "type": "text"
+            },
+            "name": "message",
+            "required": false,
+            "description": "This is a simple property",
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {
+                "summary": "\"Glad to see you\""
+              }
+            }
+          },
+          "greetings": {
+            "control": {
+              "type": "text"
+            },
+            "name": "greetings",
+            "required": false,
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 172
+      },
+      "args": {
+        "name": "Sentenza, the bad"
+      }
+    },
+    "hello-greetings--controls-custom": {
+      "id": "hello-greetings--controls-custom",
+      "kind": "Hello Greetings",
+      "name": "Controls Custom",
+      "story": "Controls Custom",
+      "parameters": {
+        "argTypes": {
+          "name": {
+            "control": {
+              "type": "text"
+            },
+            "name": "name",
+            "required": false,
+            "description": "This is a property that can be set from an attribute",
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {
+                "summary": "\"\""
+              }
+            }
+          },
+          "time": {
+            "control": {
+              "type": "object"
+            },
+            "name": "time",
+            "required": false,
+            "description": "This is a property that comes from a wire adapter",
+            "type": {
+              "name": "object"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "object"
+              },
+              "defaultValue": {
+                "summary": "{}"
+              },
+              "disable": true
+            }
+          },
+          "message": {
+            "control": {
+              "type": "text",
+              "disable": true
+            },
+            "name": "message",
+            "required": false,
+            "description": "This is a simple property",
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {
+                "summary": "\"Glad to see you\""
+              }
+            }
+          },
+          "greetings": {
+            "control": {
+              "type": "text",
+              "disable": true
+            },
+            "name": "greetings",
+            "required": false,
+            "type": {
+              "name": "string"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "string"
+              },
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 172
+      },
+      "args": {}
+    },
+    "hello-greetings--knobs": {
+      "id": "hello-greetings--knobs",
+      "kind": "Hello Greetings",
+      "name": "Knobs",
+      "story": "Knobs",
       "parameters": {
         "argTypes": {
           "name": {
@@ -164,7 +442,7 @@
           }
         },
         "framework": "web-components",
-        "fileName": 173
+        "fileName": 172
       },
       "args": {}
     },
@@ -222,7 +500,7 @@
           }
         },
         "framework": "web-components",
-        "fileName": 174
+        "fileName": 173
       },
       "args": {}
     },
@@ -280,7 +558,7 @@
           }
         },
         "framework": "web-components",
-        "fileName": 174
+        "fileName": 173
       },
       "args": {}
     },
@@ -338,15 +616,15 @@
           }
         },
         "framework": "web-components",
-        "fileName": 174
+        "fileName": 173
       },
       "args": {}
     },
-    "display-time--null-time": {
-      "id": "display-time--null-time",
+    "display-time--static-invalid-time": {
+      "id": "display-time--static-invalid-time",
       "kind": "Display time",
-      "name": "Null Time",
-      "story": "Null Time",
+      "name": "Static Invalid Time",
+      "story": "Static Invalid Time",
       "parameters": {
         "argTypes": {
           "time": {
@@ -396,15 +674,15 @@
           }
         },
         "framework": "web-components",
-        "fileName": 174
+        "fileName": 173
       },
       "args": {}
     },
-    "display-time--empty-time": {
-      "id": "display-time--empty-time",
+    "display-time--wrapped-time": {
+      "id": "display-time--wrapped-time",
       "kind": "Display time",
-      "name": "Empty Time",
-      "story": "Empty Time",
+      "name": "Wrapped Time",
+      "story": "Wrapped Time",
       "parameters": {
         "argTypes": {
           "time": {
@@ -454,77 +732,19 @@
           }
         },
         "framework": "web-components",
-        "fileName": 174
-      },
-      "args": {}
-    },
-    "display-time--fixed-time": {
-      "id": "display-time--fixed-time",
-      "kind": "Display time",
-      "name": "Fixed Time",
-      "story": "Fixed Time",
-      "parameters": {
-        "argTypes": {
-          "time": {
-            "name": "time",
-            "required": false,
-            "description": "Time passed as a complex object.",
-            "type": {
-              "name": "{ hours: number; minutes: number; seconds: number; }"
-            },
-            "table": {
-              "category": "properties",
-              "type": {
-                "summary": "{ hours: number; minutes: number; seconds: number; }"
-              },
-              "defaultValue": {
-                "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
-              }
-            }
-          },
-          "invalid": {
-            "name": "invalid",
-            "required": false,
-            "type": {
-              "name": "boolean"
-            },
-            "table": {
-              "category": "properties",
-              "type": {
-                "summary": "boolean"
-              },
-              "defaultValue": {}
-            }
-          },
-          "timeAsString": {
-            "name": "timeAsString",
-            "required": false,
-            "type": {
-              "name": "string"
-            },
-            "table": {
-              "category": "properties",
-              "type": {
-                "summary": "string"
-              },
-              "defaultValue": {}
-            }
-          }
-        },
-        "framework": "web-components",
-        "fileName": 174
+        "fileName": 173
       },
       "args": {}
     },
     "hello-world--default": {
       "id": "hello-world--default",
-      "kind": "hello-world",
+      "kind": "Hello World",
       "name": "Default",
       "story": "Default",
       "parameters": {
         "argTypes": {},
         "framework": "web-components",
-        "fileName": 175
+        "fileName": 174
       },
       "args": {}
     }
