@@ -1,7 +1,7 @@
 # LWC Storybook
 
 ## What is Storybook?
-According to the docuemntation, [Storybook](https://storybook.js.org/), Storybook is a user interface development environment and playground for UI components. The tool enables developers to create components independently and showcase components interactively in an isolated development environment.  
+According to the documentation, [Documentation](https://storybook.js.org/), Storybook is a user interface development environment and playground for UI components. The tool enables developers to create components independently and showcase components interactively in an isolated development environment.  
 
 The two deployed Storybook sites are available at the following URLs:
 [https://lwc-essentials.github.io/storybook/](https://lwc-essentials.github.io/storybook/)
