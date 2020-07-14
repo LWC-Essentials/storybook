@@ -18,28 +18,27 @@ This project offers a sample LWC application, with a library, that shows how to 
 - Components showcase  
   Shows the components in action in a dedicated, simple UI (stories).  
 - Components documentation  
-  Provide the full components documentation, which can be generated out of the component source code and/or manually written.  
+  Provide the full components documentation, which can be generated out of the components source code and/or manually written.  
 - Composition  
-  The application Storybook aggregates the components provided by the dependencies (libraries).  
+  The application Storybook aggregates the components provided by its dependencies (the library).  
 - Static deployment  
   The resulting Storybook instance is deployed to a static server, typically on Github pages, so it becomes easily available.  
-- Testing  
 - Others  
-  There are much more capabilities, like accessibility reporting, ...
+  There are much more capabilities, like testing, accessibility reporting, ...
   
 
 ## Demo project layout
-This project is a mono repo, powered by learna, which currently contains two packages:  
+This project is a mono repo, powered by lerna, which currently contains two packages:  
 
-- A reusable library of components, lwc-library  
-- An application, lwc-app, consuming the library  
+- A reusable library of components, `lwc-library`  
+- An application, `lwc-app`, consuming the library  
 
 The demo is based on Storybook version 6.0+ version which implements the composition mechanism, and thus allows the main app to render the stories coming from the library.
 
 
 ## Getting started
 
-The sample application is very basic, and not that exiting, but you can execute it with the following commands:  
+The sample application is itself very basic, and not that exiting, but you can execute it with the following commands:  
 
 ```sh
 yarn
@@ -47,83 +46,72 @@ yarn build
 yarn start
 ```
 
-More interesting in the Storybook. You can execute the library one, only showing the stories part of the library:  
+More interesting are the Storybooks.  
+You can execute the library one, only showing the stories part of the library:  
 
 ```sh
 cd packages/lwc-library/
 yarn storybook
 ```
 
-Or you can execute it from the application, which will include both the library and the aplication stories:  
+Or you can execute it from the application, which will include both the library and the application stories:  
 
 ```sh
 cd packages/lwc-app/
 yarn storybook
 ```
 
-Note: in order for the composition to work, the library's Storybook must be deployed as a static site. If you create your own library, make sure to deploy it using the following commands:  
+Note: in order for the composition to work, the library's Storybook must be deployed as a static site (see bellow for the instructions).
 
-```sh
-cd packages/lwc-app/
-yarn storybook:deploy-static
-```
 
 ### Project commands
-A series of commands is defined for each project within `package.json`. The 2 main commands to know are:  
+A series of commands is defined for each project (application and library) within `package.json`.  
+
+In development mode, starting Storybook is done with the following commands:
 
 - `storybook`
   Generate all the meta-data files, compile the LWC components and run the development server.  
-  This is the command to use at least when running Storybook for the first time. Going forward, and dependening on what changes were made to the project, more optimized commands can be used.  
-- `storybook:deploy`  
-  Build the project, build the static site, and deploy it to Github pages.
+  This is the command to use at least when running Storybook for the first time. Going forward, and dependening on what changes were made to the project, more optimized commands can be used (see; package.json).  
 
-
-Here are the other ones:  
-
-- `storybook:build`
-    Generate all the meta-data files, compile the LWC components.  
-- `storybook:meta`
-  Generate the component meta-data files `custom-elements.json`
-- `storybook:buildlwc`
-    Compiles the LWC components and generates `.storybook/build/main-storybook.js`.  
-- `storybook:start`
-  Start the component the Storybook server, assuming that the necessary build steps were completed.
-- `build-storybook`
-  Build the the static site, including the generation of `stories.json`.
-- `deploy-storybook`
-  Deploy the previously generated static site to Github pages.
   
+There are also some root commands to deploy the static site to Github Pages.  
+
+- `build-static`
+  Build the the static site, including the generation of `stories.json`, for both the application and the library.  
+- `deploy-static`
+  Deploy the static site built above to Github pages
+
 
 ## Projects Setup
 
 ### Application bundler
-Storybook is using Webpack as the application bundler. Unfortunately, LWC is generally using Rollup and there is no supported Webpack plugin. As a result, we'll use Rollup to build the components and Webpack to run the application. This has several consequences:  
+Storybook is using Webpack as the application bundler. Unfortunately, LWC is generally using Rollup and there is currently no supported Webpack plugin. As a result, we'll use Rollup to build the components and Webpack to build Storybook. This has several consequences:  
 
 - There are 2 build steps, one for the components and one for Storybook itself  
-  The `.storybook/` folder contains a rollup configuration that is used to compile the LWC components. The result is a single JS files, generated to `.storybook/build`, that is loaded by Webpack.  
+  The `.storybook/` folder contains a rollup configuration that is used to compile the LWC components. The result is a single JavaScript file, generated to `.storybook/build`, referenced and loaded by Webpack.  
 - The components displayed as part of a story must be custom elements.  
-  Custom elements limit the values to be passed to the components, as HTML only allow string literals as attributes. To pass more complex values, the developer must create wrappers.  
+  All exposed LWC components should be registered as custom elements. In practice, this should not be an issue as naming conflicts between libraries should be very rare.
 
 
 ### Storybook folders
-Both the library (lwc-library) and the application (lwc-app) feature 2 new directories:  
+Both the library (`lwc-library`) and the application (`lwc-app`) feature 2 Storybook related directories:  
 
 - `.storybook`  
-  Contains the Storybook configuration files (main.js, preview.js...) as well as the LWC files needed for Storybook, like the rollup configuration.  
+  Contains the Storybook configuration files (`main.js`, `preview.js`...) as well as the LWC files needed for Storybook, like the rollup configuration.  
 - `.stories`  
-  Contain all the stories, for all the components. After several discussions, we decided to isolate the stories in their own folder rather than co-locating them with the components. It makes it easier for a developer to find the stories when working on them.  
-  Note that this folder also contains an `index.js` file that loads and register all the components as custom elements.
+  Contains all the stories, for all the components. After several discussions, we decided to isolate the stories in their own folder rather than co-locating them with the components. It makes it easier for a developer to find the stories when working on them.  
+  Note that this folder also contains an `index.js` file that references and registers all the components as custom elements. This is the entry point for the Rollup build.
 
 
 ### Composition
-The main application is exposing the stories defined in the library through the [composition](https://medium.com/storybookjs/storybook-composition-af0da9084fba) mechanism. To enable the composition, the library must be deployed as a static site with a properly generated `stories.json` file. Then, the application can either explicitely include it (see: `main.js - refs`) or imnplicitly if the library it includes features an entry in its `package.json` (automatic loading). This sample project uses the later.
+The main application is exposing it own stories as well as the stories defined in the library. For that, it uses the [Composition](https://medium.com/storybookjs/storybook-composition-af0da9084fba) mechanism. To enable composition, the library must be deployed as a static site with a properly generated `stories.json` file. Then, the application can either explicitely include it (see: `main.js - refs`) or implicitly if the library it includes features an entry in its `package.json` (automatic loading). This sample project uses the later, which makes it trivial to use.
 
 
 ## Implementing Storybook
 
 ### Creating a story for a component
-As there is no particular support for LWC in Storybook, this project uses the generic Web Component integration. As such, all the components that are exposed within the stories must be registered as custom elements. This is done in `/stories/index.js`.  
-Stories use the [CSF](https://storybook.js.org/docs/formats/component-story-format/) format, using the `html` tag from LitHtml when including the markup. Omitting the tag could change the rendering, particularly in the documentation.
+As there is no dedicated LWC support in Storybook, this project uses the generic Web Component integration. As such, all the components that are exposed within the stories must be registered as custom elements. This is done in `/stories/index.js`.  
+Stories use the [CSF](https://storybook.js.org/docs/formats/component-story-format/) format, using the `html` tag from [LitElement](https://lit-element.polymer-project.org/guide/templates) when including the markup. Omitting the tag could change the rendering, and limit how attributes/properties are passed to the components.  
 
 Here is an example:  
 
@@ -134,11 +122,10 @@ export const default_ = () => html`
 `;
 ```
 
-
 ### Documenting Web Components
-Documentation which is a great strengh of Storybook, can be at least partially generated. The WebComponent organization comes with a meta-data format to desbribe web components: [custom-elements.json](https://github.com/webcomponents/custom-elements-json).Warn: this format is not yet a standard and can evolve in the near future. It currently contains enough information to describe a components, its attributes and properties, events, CSS variables...  
+Documentation which is a great strengh of Storybook, can be at least partially generated. The WebComponent organization comes with a meta-data format to desbribe web components: [custom-elements.json](https://github.com/webcomponents/custom-elements-json). Warn: this format is not yet a standard and can evolve in the near future. It currently contains enough information to describe a component, its attributes, properties, events, CSS variables...  
 
-Writting or maintaining such a file manually is cumbersome, so we better generate it from the component source files. This tasks is achieved by a third party library: [web-component-analyzer](https://github.com/runem/web-component-analyzer#readme). As Javascript doesn't describe all the meta-data that we need, the source code must be enriched with [JSDoc](https://jsdoc.app/) information. In particular, it supports some web components specific tags describes [here](https://www.npmjs.com/package/web-component-analyzer#%E2%9E%A4-how-to-document-your-components-using-jsdoc). 
+Writting or maintaining such a file manually is cumbersome, so we better generate it from the component source files. This tasks is achieved by a third party library: [web-component-analyzer](https://github.com/runem/web-component-analyzer#readme). As Javascript doesn't describe all the meta-data that we need, the source code must be enriched with [JSDoc](https://jsdoc.app/) information. In particular, web-component-analyzer supports a set of web components specific tags describes [here](https://www.npmjs.com/package/web-component-analyzer#%E2%9E%A4-how-to-document-your-components-using-jsdoc). 
 
 In order for web components to be recognized by web-component-analyzer, it currently must feature an element tag in its header. Moreover, the attributes, properties, ... should be property taggesd as well:  
 
@@ -163,35 +150,45 @@ export default class MyComponent extends LightningElement {
 }
 ```
 
+#### Generating documentation files
+`web-component-analyzer` can also generate a markdown file describing the full list of components.  To experiment it, run:  
+```sh
+yarn storybook:meta-doc
+```
+The result documentation file is generated in the `.stories/build` folder.
+
 
 ### Story types
 This sample application shows different story types.  
 
 #### Component story
-A component story is defined using the [CSF](https://storybook.js.org/docs/formats/component-story-format/) format in a `xxx.stories.js` file. Simply add the file to the `/stories` folder in the project root, or one of its subdirectory. Storybook is configured to load all of them.
+Component stories are defined using the [CSF](https://storybook.js.org/docs/formats/component-story-format/) format within `xxx.stories.js` files. Simply add the file to the `/stories` folder in the project root, or one of its subdirectories. Storybook is configured to automatically load all of them.
 
-Make sure that the HTML markup uses the Lit Element `html` tag.  
+Make sure that the HTML markup uses the [LitElement](https://lit-element.polymer-project.org/guide/templates) `html` tag.  
 
 Here is an example: [https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-library/stories/hello-greetings.stories.js](https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-library/stories/hello-greetings.stories.js).  
 
 #### Documentation story
-Storybook also uses [MDX](https://storybook.js.org/docs/formats/mdx-syntax/) files to provide a customizable documentation for the components. An MDX file contains a mix of markdown and React JSX. The documentation stories are stored in `xxx.stories.mdx` files that are also automatically loaded. Similarly to the component stories, it uses the Lit Element `html` tag for the component markup.  
+Storybook also uses [MDX](https://storybook.js.org/docs/formats/mdx-syntax/) files to provide a customizable documentation for the components. An MDX file contains a mix of markdown and React JSX. Documentation stories are defined wuthin `xxx.stories.mdx` files that are also automatically loaded. Similarly to the component stories, it uses the LitElement `html` tag for the component markup.  
 
 Here is an example: [https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-library/stories/doc-greetings.stories.mdx](https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-library/stories/doc-greetings.stories.mdx).  
 
+#### Static content
+Without creating the documentation, a static story only displaying content can easily be created using HTML.  
+
+Here is an example: [https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-app/stories/welcome.stories.js](https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-app/stories/welcome.stories.js).  
+
+#### Interacting with the components
+The project shows how to display component attributes & properties using [Controls](https://github.com/storybookjs/storybook/blob/next/addons/controls/README.md#writing-stories). The stories for the `hello-greetings` demonstrate different variations.  
+Note that [Knobs](https://github.com/storybookjs/storybook/tree/master/addons/knobs) are still supported but deprecated. One should use Controls instead.
+
+See this example: [https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-library/stories/hello-greetings.stories.js](https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-library/stories/hello-greetings.stories.js)
+
+
 ### Developer experience
-One of the value of Storybook is the component development experience, where a code change is reflected directly in the Storybook UI. For this, Storybook relies on Webpack watchers but this is not sufficient as the components are built using Rollup. Rollup is thus started with its own watchers, so it rebuilt when a component is changed. Then Webpack watches the changes to the Rollup built file and rebuilds itself.  
+One of the value of Storybook is the component development experience, where code changea are reflected automatically in the Storybook UI. For this, Storybook relies on Webpack watchers. But this is not sufficient as the components are built using Rollup. Rollup is thus started with its own watchers to rebuild when a component is changed. Then Webpack watches the changes to the Rollup built file and rebuilds itself.  
 
-As both Webpack and Rollup have watchers, the 2 processes must run in parallel. To make this reliable, we use [npm-run-all](https://www.npmjs.com/package/npm-run-all) instead of the simple `&` operator when launching processes.  
-
-
-### Static content
-There are two ways for adding static content:  
-
-- Create an MDX story and add your markdown
-- Create a component story and inject HTML
-
-Here is an example for the second solution: [https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-app/stories/welcome.stories.js](https://github.com/LWC-Essentials/storybook/blob/master/packages/lwc-app/stories/welcome.stories.js).  
+As both Webpack and Rollup have watchers, the 2 processes must run in parallel. To make this reliable, we use [npm-run-all](https://www.npmjs.com/package/npm-run-all) instead of the simple `&` operator when launching processes. This better manages the termination of the background processes.  
 
 
 ### Deploying the static sites
@@ -221,7 +218,7 @@ There are multiple solutions:
   ```
 
 - Create a technical Web Component that wraps the desired one, and pass it complex parameters via the template  
-  The library demo defines these components is the `wc` namespace located in `stories`. Note that the syntax above should be preferred in most cases, as it is simplier. 
+  The library demo defines these components is the `wc` namespace located in `stories`. Note that the syntax above should be preferred in most cases, as it is simplier. Such a wrapper can be useful when an LWC template is required, for example when dealing with slots without Shadow DOM.  
 
 
 ### Provided add-ons
@@ -252,7 +249,7 @@ The sample app configures a set of add-ons
 - [@storybook/addon-links](https://www.npmjs.com/package/@storybook/addon-links)  
   Links can be used to create links that navigate between stories in Storybook.
 
-The WebComponent organization is also coming with some add-ons, like [storybook-addon-web-components-knobs](https://www.npmjs.com/package/storybook-addon-web-components-knobs), but they have not been integrated with this sample project yet.
+The WebComponent organization is also coming with extra add-ons, like [storybook-addon-web-components-knobs](https://www.npmjs.com/package/storybook-addon-web-components-knobs), but they have not been integrated with this sample project yet.
 
 
 

@@ -65,9 +65,11 @@
         "serve": "node index.js",
         "start": "concurrently --kill-others \"yarn build --watch\" \"yarn serve\"",
 
-        "storybook": "run-p storybook:buildlwcw storybook:start",
+        "storybook": "yarn storybook:meta && run-p storybook:buildlwcw storybook:start",
         "storybook:build": "yarn storybook:meta && yarn storybook:buildlwc",
         "storybook:meta": "web-component-analyzer src --outFiles .storybook/build/custom-elements.json",
+        "storybook:meta-doc": "web-component-analyzer src --format markdown --outFiles .storybook/build/documentation.md",
+        "storybook:meta-vs": "web-component-analyzer src --format vscode --outFiles .storybook/build/documentation.md",
         "storybook:buildlwc": "rollup -c ./.storybook/rollup.config.js",
         "storybook:buildlwcw": "rollup -w -c ./.storybook/rollup.config.js",
         "storybook:start": "start-storybook -s ./dist -p 6010",

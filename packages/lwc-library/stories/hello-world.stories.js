@@ -1,10 +1,8 @@
-import { withKnobs } from '@storybook/addon-knobs';
 import { html } from 'lit-html';
 
 export default {
-    title: 'hello-world',
-    component: 'hello-world',
-    decorators: [withKnobs],
+    title: 'Hello World',
+    component: 'hello-world'
 };
 
 export const default_ = () => html`
