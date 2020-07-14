@@ -1,7 +1,7 @@
 import { html } from 'lit-html';
 
 export default {
-    title: 'Display time',
+    title: 'Internal/Display time',
     component: 'hello-time'
 };
 
