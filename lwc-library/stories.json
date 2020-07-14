@@ -446,9 +446,9 @@
       },
       "args": {}
     },
-    "display-time--default": {
-      "id": "display-time--default",
-      "kind": "Display time",
+    "internal-display-time--default": {
+      "id": "internal-display-time--default",
+      "kind": "Internal/Display time",
       "name": "Default",
       "story": "Default",
       "parameters": {
@@ -504,9 +504,9 @@
       },
       "args": {}
     },
-    "display-time--static-null-time": {
-      "id": "display-time--static-null-time",
-      "kind": "Display time",
+    "internal-display-time--static-null-time": {
+      "id": "internal-display-time--static-null-time",
+      "kind": "Internal/Display time",
       "name": "Static Null Time",
       "story": "Static Null Time",
       "parameters": {
@@ -562,9 +562,9 @@
       },
       "args": {}
     },
-    "display-time--static-time": {
-      "id": "display-time--static-time",
-      "kind": "Display time",
+    "internal-display-time--static-time": {
+      "id": "internal-display-time--static-time",
+      "kind": "Internal/Display time",
       "name": "Static Time",
       "story": "Static Time",
       "parameters": {
@@ -620,9 +620,9 @@
       },
       "args": {}
     },
-    "display-time--static-invalid-time": {
-      "id": "display-time--static-invalid-time",
-      "kind": "Display time",
+    "internal-display-time--static-invalid-time": {
+      "id": "internal-display-time--static-invalid-time",
+      "kind": "Internal/Display time",
       "name": "Static Invalid Time",
       "story": "Static Invalid Time",
       "parameters": {
@@ -678,9 +678,9 @@
       },
       "args": {}
     },
-    "display-time--wrapped-time": {
-      "id": "display-time--wrapped-time",
-      "kind": "Display time",
+    "internal-display-time--wrapped-time": {
+      "id": "internal-display-time--wrapped-time",
+      "kind": "Internal/Display time",
       "name": "Wrapped Time",
       "story": "Wrapped Time",
       "parameters": {
