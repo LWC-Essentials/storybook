@@ -8,6 +8,10 @@ import HelloWorld from 'hello/world';
 import HelloGreetings from 'hello/greetings';
 import HelloTime from 'hello/time';
 
+import UnitAttrs from 'unit/attrs';
+import UnitProps from 'unit/props';
+import UnitCssVars from 'unit/cssvars';
+
 import WcTime from 'wc/time';
 
 
@@ -18,4 +22,6 @@ buildAndRegisterCustomElement('hello-greetings', HelloGreetings);
 
 buildAndRegisterCustomElement('wc-time', WcTime);
 
-
+buildAndRegisterCustomElement('unit-attrs', UnitAttrs);
+buildAndRegisterCustomElement('unit-props', UnitProps);
+buildAndRegisterCustomElement('unit-cssvars', UnitCssVars);

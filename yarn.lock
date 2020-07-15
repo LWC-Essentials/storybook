@@ -1924,6 +1924,11 @@
   dependencies:
     mkdirp "^1.0.4"
 
+"@open-wc/lit-helpers@0.3.10":
+  version "0.3.10"
+  resolved "https://ash-nexus-proxy.internal.salesforce.com/nexus/content/groups/npm-all/@open-wc/lit-helpers/-/lit-helpers-0.3.10.tgz#d1f64c020605ca174ff5ec527aded3d90fb0c16c"
+  integrity sha512-RR1Wch29q8Tj/PB9lDzFy+CENLOs5oWTzinwfV8daSoh8/OTY3JKge4tZOXT0Q3NJa4IzRjq1cFZ/45vGEezwA==
+
 "@reach/router@^1.3.3":
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.3.4.tgz#d2574b19370a70c80480ed91f3da840136d10f8c"

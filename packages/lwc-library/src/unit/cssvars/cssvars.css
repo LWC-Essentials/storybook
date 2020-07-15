@@ -1,0 +1,11 @@
+.unit-cssvars-container {
+    border-style: solid;
+    border-color: var(--unit-border-color,black);
+    border-width: var(--unit-border-width,1px);
+}
+
+.unit-cssvars-text {
+    font-family: "Times New Roman", Times, serif;
+    font-size: var(--unit-text-size,16px);
+    color: var(--unit-text-color,blue);
+}
