@@ -1,11 +1,6 @@
 import { html } from 'lit-html';
 import { spreadProps } from '@open-wc/lit-helpers';
 
-// Spread operator
-//   https://github.com/Polymer/lit-html/issues/923
-// LitHtml helper
-//   https://open-wc.org/developing/lit-helpers.html#spread-directives
-
 export default {
     title: 'Units/2- Properties',
     component: 'unit-props'

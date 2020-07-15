@@ -24,7 +24,7 @@ export const DefaultWithArgs = (args) => html`
         attr-boolean-implicit="${args.attrBooleanImplicit}"
         attr-number-implicit="${args.attrNumberImplicit}"
         attr-string-implicit="${args.attrStringImplicit}"
-        attr-object-implicit="${args.attrObjectImplicit}"
+        attr-objectImplicit="${args.attrObjectImplicit}"
         attr-no-type="${args.attrNoType}"
         attr-read-only="${args.attrReadOnly}"
     >

@@ -31,6 +31,14 @@ addParameters({
   docs: {
     iframeHeight: '200px',
   },
+  options: {
+    storySort: (a, b) => {
+      const sa = a[1].kind+"/"+a[1].name
+      const sb = b[1].kind+"/"+b[1].name
+      //console.log("Stories: "+sa+", "+sb)
+      return sa.localeCompare(sb);
+    }
+  },
 });
 
 // configure(require.context('../stories', true, /\.stories\.(js|mdx)$/), module);
