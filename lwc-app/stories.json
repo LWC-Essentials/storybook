@@ -10,7 +10,9 @@
         "framework": "web-components",
         "fileName": 166
       },
-      "args": {}
+      "args": {},
+      "argTypes": {},
+      "initialArgs": {}
     },
     "welcome--welcome": {
       "id": "welcome--welcome",
@@ -22,7 +24,9 @@
         "framework": "web-components",
         "fileName": 167
       },
-      "args": {}
+      "args": {},
+      "argTypes": {},
+      "initialArgs": {}
     }
   }
 }

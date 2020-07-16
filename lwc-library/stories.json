@@ -9,9 +9,11 @@
         "options": {},
         "argTypes": {},
         "framework": "web-components",
-        "fileName": 167
+        "fileName": 168
       },
-      "args": {}
+      "args": {},
+      "argTypes": {},
+      "initialArgs": {}
     },
     "hello-greetings--controls": {
       "id": "hello-greetings--controls",
@@ -100,9 +102,89 @@
           }
         },
         "framework": "web-components",
-        "fileName": 168
+        "fileName": 169
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "name": {
+          "control": {
+            "type": "text"
+          },
+          "name": "name",
+          "required": false,
+          "description": "This is a property that can be set from an attribute",
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "time": {
+          "control": {
+            "type": "object"
+          },
+          "name": "time",
+          "required": false,
+          "description": "This is a property that comes from a wire adapter",
+          "type": {
+            "name": "object"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "object"
+            },
+            "defaultValue": {
+              "summary": "{}"
+            }
+          }
+        },
+        "message": {
+          "control": {
+            "type": "text"
+          },
+          "name": "message",
+          "required": false,
+          "description": "This is a simple property",
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"Glad to see you\""
+            }
+          }
+        },
+        "greetings": {
+          "control": {
+            "type": "text"
+          },
+          "name": "greetings",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "hello-greetings--controls-custom": {
       "id": "hello-greetings--controls-custom",
@@ -194,9 +276,92 @@
           }
         },
         "framework": "web-components",
-        "fileName": 168
+        "fileName": 169
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "name": {
+          "control": {
+            "type": "text"
+          },
+          "name": "name",
+          "required": false,
+          "description": "This is a property that can be set from an attribute",
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "time": {
+          "control": {
+            "type": "object"
+          },
+          "name": "time",
+          "required": false,
+          "description": "This is a property that comes from a wire adapter",
+          "type": {
+            "name": "object"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "object"
+            },
+            "defaultValue": {
+              "summary": "{}"
+            },
+            "disable": true
+          }
+        },
+        "message": {
+          "control": {
+            "type": "text",
+            "disable": true
+          },
+          "name": "message",
+          "required": false,
+          "description": "This is a simple property",
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"Glad to see you\""
+            }
+          }
+        },
+        "greetings": {
+          "control": {
+            "type": "text",
+            "disable": true
+          },
+          "name": "greetings",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "hello-greetings--controls-default-value": {
       "id": "hello-greetings--controls-default-value",
@@ -214,11 +379,11 @@
               "type": "text"
             },
             "name": "name",
+            "required": false,
+            "description": "This is a property that can be set from an attribute",
             "type": {
               "name": "string"
             },
-            "required": false,
-            "description": "This is a property that can be set from an attribute",
             "table": {
               "category": "properties",
               "type": {
@@ -288,9 +453,91 @@
           }
         },
         "framework": "web-components",
-        "fileName": 168
+        "fileName": 169
       },
       "args": {
+        "name": "Sentenza, the bad"
+      },
+      "argTypes": {
+        "name": {
+          "control": {
+            "type": "text"
+          },
+          "name": "name",
+          "required": false,
+          "description": "This is a property that can be set from an attribute",
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "time": {
+          "control": {
+            "type": "object"
+          },
+          "name": "time",
+          "required": false,
+          "description": "This is a property that comes from a wire adapter",
+          "type": {
+            "name": "object"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "object"
+            },
+            "defaultValue": {
+              "summary": "{}"
+            }
+          }
+        },
+        "message": {
+          "control": {
+            "type": "text"
+          },
+          "name": "message",
+          "required": false,
+          "description": "This is a simple property",
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"Glad to see you\""
+            }
+          }
+        },
+        "greetings": {
+          "control": {
+            "type": "text"
+          },
+          "name": "greetings",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {
         "name": "Sentenza, the bad"
       }
     },
@@ -369,9 +616,77 @@
           }
         },
         "framework": "web-components",
-        "fileName": 168
+        "fileName": 169
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "name": {
+          "name": "name",
+          "required": false,
+          "description": "This is a property that can be set from an attribute",
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "time": {
+          "name": "time",
+          "required": false,
+          "description": "This is a property that comes from a wire adapter",
+          "type": {
+            "name": "object"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "object"
+            },
+            "defaultValue": {
+              "summary": "{}"
+            }
+          }
+        },
+        "message": {
+          "name": "message",
+          "required": false,
+          "description": "This is a simple property",
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"Glad to see you\""
+            }
+          }
+        },
+        "greetings": {
+          "name": "greetings",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "hello-world--default": {
       "id": "hello-world--default",
@@ -382,9 +697,11 @@
         "options": {},
         "argTypes": {},
         "framework": "web-components",
-        "fileName": 170
+        "fileName": 171
       },
-      "args": {}
+      "args": {},
+      "argTypes": {},
+      "initialArgs": {}
     },
     "internal-display-time--default": {
       "id": "internal-display-time--default",
@@ -441,9 +758,57 @@
           }
         },
         "framework": "web-components",
-        "fileName": 169
+        "fileName": 170
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "time": {
+          "name": "time",
+          "required": false,
+          "description": "Time passed as a complex object.",
+          "type": {
+            "name": "{ hours: number; minutes: number; seconds: number; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ hours: number; minutes: number; seconds: number; }"
+            },
+            "defaultValue": {
+              "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
+            }
+          }
+        },
+        "invalid": {
+          "name": "invalid",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {}
+          }
+        },
+        "timeAsString": {
+          "name": "timeAsString",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "internal-display-time--static-invalid-time": {
       "id": "internal-display-time--static-invalid-time",
@@ -500,9 +865,57 @@
           }
         },
         "framework": "web-components",
-        "fileName": 169
+        "fileName": 170
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "time": {
+          "name": "time",
+          "required": false,
+          "description": "Time passed as a complex object.",
+          "type": {
+            "name": "{ hours: number; minutes: number; seconds: number; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ hours: number; minutes: number; seconds: number; }"
+            },
+            "defaultValue": {
+              "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
+            }
+          }
+        },
+        "invalid": {
+          "name": "invalid",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {}
+          }
+        },
+        "timeAsString": {
+          "name": "timeAsString",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "internal-display-time--static-null-time": {
       "id": "internal-display-time--static-null-time",
@@ -559,9 +972,57 @@
           }
         },
         "framework": "web-components",
-        "fileName": 169
+        "fileName": 170
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "time": {
+          "name": "time",
+          "required": false,
+          "description": "Time passed as a complex object.",
+          "type": {
+            "name": "{ hours: number; minutes: number; seconds: number; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ hours: number; minutes: number; seconds: number; }"
+            },
+            "defaultValue": {
+              "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
+            }
+          }
+        },
+        "invalid": {
+          "name": "invalid",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {}
+          }
+        },
+        "timeAsString": {
+          "name": "timeAsString",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "internal-display-time--static-time": {
       "id": "internal-display-time--static-time",
@@ -618,9 +1079,57 @@
           }
         },
         "framework": "web-components",
-        "fileName": 169
+        "fileName": 170
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "time": {
+          "name": "time",
+          "required": false,
+          "description": "Time passed as a complex object.",
+          "type": {
+            "name": "{ hours: number; minutes: number; seconds: number; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ hours: number; minutes: number; seconds: number; }"
+            },
+            "defaultValue": {
+              "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
+            }
+          }
+        },
+        "invalid": {
+          "name": "invalid",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {}
+          }
+        },
+        "timeAsString": {
+          "name": "timeAsString",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "internal-display-time--wrapped-time": {
       "id": "internal-display-time--wrapped-time",
@@ -677,9 +1186,57 @@
           }
         },
         "framework": "web-components",
-        "fileName": 169
+        "fileName": 170
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "time": {
+          "name": "time",
+          "required": false,
+          "description": "Time passed as a complex object.",
+          "type": {
+            "name": "{ hours: number; minutes: number; seconds: number; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ hours: number; minutes: number; seconds: number; }"
+            },
+            "defaultValue": {
+              "summary": "{\"hours\":0,\"minutes\":0,\"seconds\":0}"
+            }
+          }
+        },
+        "invalid": {
+          "name": "invalid",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {}
+          }
+        },
+        "timeAsString": {
+          "name": "timeAsString",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "units-1-attributes--default-empty": {
       "id": "units-1-attributes--default-empty",
@@ -700,9 +1257,7 @@
               "type": {
                 "summary": "boolean"
               },
-              "defaultValue": {
-                "summary": "false"
-              }
+              "defaultValue": {}
             }
           },
           "attrNumber": {
@@ -716,9 +1271,7 @@
               "type": {
                 "summary": "number"
               },
-              "defaultValue": {
-                "summary": "0"
-              }
+              "defaultValue": {}
             }
           },
           "attrString": {
@@ -732,25 +1285,17 @@
               "type": {
                 "summary": "string"
               },
-              "defaultValue": {
-                "summary": "\"\""
-              }
+              "defaultValue": {}
             }
           },
           "attrObject": {
             "name": "attrObject",
             "required": false,
-            "type": {
-              "name": "Object"
-            },
+            "type": {},
             "table": {
               "category": "properties",
-              "type": {
-                "summary": "Object"
-              },
-              "defaultValue": {
-                "summary": "{\"name\":\"attrObject\"}"
-              }
+              "type": {},
+              "defaultValue": {}
             }
           },
           "attrBooleanImplicit": {
@@ -843,9 +1388,152 @@
           }
         },
         "framework": "web-components",
-        "fileName": 171
+        "fileName": 172
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "attrBoolean": {
+          "name": "attrBoolean",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {}
+          }
+        },
+        "attrNumber": {
+          "name": "attrNumber",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {}
+          }
+        },
+        "attrString": {
+          "name": "attrString",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        },
+        "attrObject": {
+          "name": "attrObject",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "attrBooleanImplicit": {
+          "name": "attrBooleanImplicit",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {
+              "summary": "false"
+            }
+          }
+        },
+        "attrNumberImplicit": {
+          "name": "attrNumberImplicit",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {
+              "summary": "0"
+            }
+          }
+        },
+        "attrStringImplicit": {
+          "name": "attrStringImplicit",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "attrObjectImplicit": {
+          "name": "attrObjectImplicit",
+          "required": false,
+          "type": {
+            "name": "{ name: string; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ name: string; }"
+            },
+            "defaultValue": {
+              "summary": "{\"name\":\"attrObjectImplicit\"}"
+            }
+          }
+        },
+        "attrNoType": {
+          "name": "attrNoType",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "attrReadOnly": {
+          "name": "attrReadOnly",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "units-1-attributes--default-with-args": {
       "id": "units-1-attributes--default-with-args",
@@ -869,9 +1557,7 @@
               "type": {
                 "summary": "boolean"
               },
-              "defaultValue": {
-                "summary": "false"
-              }
+              "defaultValue": {}
             }
           },
           "attrNumber": {
@@ -888,9 +1574,7 @@
               "type": {
                 "summary": "number"
               },
-              "defaultValue": {
-                "summary": "0"
-              }
+              "defaultValue": {}
             }
           },
           "attrString": {
@@ -907,9 +1591,7 @@
               "type": {
                 "summary": "string"
               },
-              "defaultValue": {
-                "summary": "\"\""
-              }
+              "defaultValue": {}
             }
           },
           "attrObject": {
@@ -918,17 +1600,11 @@
             },
             "name": "attrObject",
             "required": false,
-            "type": {
-              "name": "Object"
-            },
+            "type": {},
             "table": {
               "category": "properties",
-              "type": {
-                "summary": "Object"
-              },
-              "defaultValue": {
-                "summary": "{\"name\":\"attrObject\"}"
-              }
+              "type": {},
+              "defaultValue": {}
             }
           },
           "attrBooleanImplicit": {
@@ -1039,9 +1715,182 @@
           }
         },
         "framework": "web-components",
-        "fileName": 171
+        "fileName": 172
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "attrBoolean": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "attrBoolean",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {}
+          }
+        },
+        "attrNumber": {
+          "control": {
+            "type": "number"
+          },
+          "name": "attrNumber",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {}
+          }
+        },
+        "attrString": {
+          "control": {
+            "type": "text"
+          },
+          "name": "attrString",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        },
+        "attrObject": {
+          "control": {
+            "type": "object"
+          },
+          "name": "attrObject",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "attrBooleanImplicit": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "attrBooleanImplicit",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {
+              "summary": "false"
+            }
+          }
+        },
+        "attrNumberImplicit": {
+          "control": {
+            "type": "number"
+          },
+          "name": "attrNumberImplicit",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {
+              "summary": "0"
+            }
+          }
+        },
+        "attrStringImplicit": {
+          "control": {
+            "type": "text"
+          },
+          "name": "attrStringImplicit",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "attrObjectImplicit": {
+          "control": {
+            "type": "object"
+          },
+          "name": "attrObjectImplicit",
+          "required": false,
+          "type": {
+            "name": "{ name: string; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ name: string; }"
+            },
+            "defaultValue": {
+              "summary": "{\"name\":\"attrObjectImplicit\"}"
+            }
+          }
+        },
+        "attrNoType": {
+          "control": {
+            "type": "object"
+          },
+          "name": "attrNoType",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "attrReadOnly": {
+          "control": {
+            "type": "text"
+          },
+          "name": "attrReadOnly",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "units-1-attributes--default-with-spread-args": {
       "id": "units-1-attributes--default-with-spread-args",
@@ -1065,9 +1914,7 @@
               "type": {
                 "summary": "boolean"
               },
-              "defaultValue": {
-                "summary": "false"
-              }
+              "defaultValue": {}
             }
           },
           "attrNumber": {
@@ -1084,9 +1931,7 @@
               "type": {
                 "summary": "number"
               },
-              "defaultValue": {
-                "summary": "0"
-              }
+              "defaultValue": {}
             }
           },
           "attrString": {
@@ -1103,9 +1948,7 @@
               "type": {
                 "summary": "string"
               },
-              "defaultValue": {
-                "summary": "\"\""
-              }
+              "defaultValue": {}
             }
           },
           "attrObject": {
@@ -1114,17 +1957,11 @@
             },
             "name": "attrObject",
             "required": false,
-            "type": {
-              "name": "Object"
-            },
+            "type": {},
             "table": {
               "category": "properties",
-              "type": {
-                "summary": "Object"
-              },
-              "defaultValue": {
-                "summary": "{\"name\":\"attrObject\"}"
-              }
+              "type": {},
+              "defaultValue": {}
             }
           },
           "attrBooleanImplicit": {
@@ -1235,9 +2072,182 @@
           }
         },
         "framework": "web-components",
-        "fileName": 171
+        "fileName": 172
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "attrBoolean": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "attrBoolean",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {}
+          }
+        },
+        "attrNumber": {
+          "control": {
+            "type": "number"
+          },
+          "name": "attrNumber",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {}
+          }
+        },
+        "attrString": {
+          "control": {
+            "type": "text"
+          },
+          "name": "attrString",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        },
+        "attrObject": {
+          "control": {
+            "type": "object"
+          },
+          "name": "attrObject",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "attrBooleanImplicit": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "attrBooleanImplicit",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {
+              "summary": "false"
+            }
+          }
+        },
+        "attrNumberImplicit": {
+          "control": {
+            "type": "number"
+          },
+          "name": "attrNumberImplicit",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {
+              "summary": "0"
+            }
+          }
+        },
+        "attrStringImplicit": {
+          "control": {
+            "type": "text"
+          },
+          "name": "attrStringImplicit",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "attrObjectImplicit": {
+          "control": {
+            "type": "object"
+          },
+          "name": "attrObjectImplicit",
+          "required": false,
+          "type": {
+            "name": "{ name: string; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ name: string; }"
+            },
+            "defaultValue": {
+              "summary": "{\"name\":\"attrObjectImplicit\"}"
+            }
+          }
+        },
+        "attrNoType": {
+          "control": {
+            "type": "object"
+          },
+          "name": "attrNoType",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "attrReadOnly": {
+          "control": {
+            "type": "text"
+          },
+          "name": "attrReadOnly",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "units-2-properties--default-empty": {
       "id": "units-2-properties--default-empty",
@@ -1397,9 +2407,160 @@
           }
         },
         "framework": "web-components",
-        "fileName": 173
+        "fileName": 176
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "propBoolean": {
+          "name": "propBoolean",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {
+              "summary": "false"
+            }
+          }
+        },
+        "propNumber": {
+          "name": "propNumber",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {
+              "summary": "0"
+            }
+          }
+        },
+        "propString": {
+          "name": "propString",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "propObject": {
+          "name": "propObject",
+          "required": false,
+          "type": {
+            "name": "{ name: string; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ name: string; }"
+            },
+            "defaultValue": {
+              "summary": "{\"name\":\"attrObject\"}"
+            }
+          }
+        },
+        "propBooleanImplicit": {
+          "name": "propBooleanImplicit",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {
+              "summary": "false"
+            }
+          }
+        },
+        "propNumberImplicit": {
+          "name": "propNumberImplicit",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {
+              "summary": "0"
+            }
+          }
+        },
+        "propStringImplicit": {
+          "name": "propStringImplicit",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "propObjectImplicit": {
+          "name": "propObjectImplicit",
+          "required": false,
+          "type": {
+            "name": "{ name: string; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ name: string; }"
+            },
+            "defaultValue": {
+              "summary": "{\"name\":\"attrObjectImplicit\"}"
+            }
+          }
+        },
+        "propNoType": {
+          "name": "propNoType",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "propReadOnly": {
+          "name": "propReadOnly",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "units-2-properties--default-with-args": {
       "id": "units-2-properties--default-with-args",
@@ -1589,9 +2750,190 @@
           }
         },
         "framework": "web-components",
-        "fileName": 173
+        "fileName": 176
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "propBoolean": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "propBoolean",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {
+              "summary": "false"
+            }
+          }
+        },
+        "propNumber": {
+          "control": {
+            "type": "number"
+          },
+          "name": "propNumber",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {
+              "summary": "0"
+            }
+          }
+        },
+        "propString": {
+          "control": {
+            "type": "text"
+          },
+          "name": "propString",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "propObject": {
+          "control": {
+            "type": "object"
+          },
+          "name": "propObject",
+          "required": false,
+          "type": {
+            "name": "{ name: string; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ name: string; }"
+            },
+            "defaultValue": {
+              "summary": "{\"name\":\"attrObject\"}"
+            }
+          }
+        },
+        "propBooleanImplicit": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "propBooleanImplicit",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {
+              "summary": "false"
+            }
+          }
+        },
+        "propNumberImplicit": {
+          "control": {
+            "type": "number"
+          },
+          "name": "propNumberImplicit",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {
+              "summary": "0"
+            }
+          }
+        },
+        "propStringImplicit": {
+          "control": {
+            "type": "text"
+          },
+          "name": "propStringImplicit",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "propObjectImplicit": {
+          "control": {
+            "type": "object"
+          },
+          "name": "propObjectImplicit",
+          "required": false,
+          "type": {
+            "name": "{ name: string; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ name: string; }"
+            },
+            "defaultValue": {
+              "summary": "{\"name\":\"attrObjectImplicit\"}"
+            }
+          }
+        },
+        "propNoType": {
+          "control": {
+            "type": "object"
+          },
+          "name": "propNoType",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "propReadOnly": {
+          "control": {
+            "type": "object"
+          },
+          "name": "propReadOnly",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "units-2-properties--default-with-spread-args": {
       "id": "units-2-properties--default-with-spread-args",
@@ -1781,9 +3123,190 @@
           }
         },
         "framework": "web-components",
-        "fileName": 173
+        "fileName": 176
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "propBoolean": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "propBoolean",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {
+              "summary": "false"
+            }
+          }
+        },
+        "propNumber": {
+          "control": {
+            "type": "number"
+          },
+          "name": "propNumber",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {
+              "summary": "0"
+            }
+          }
+        },
+        "propString": {
+          "control": {
+            "type": "text"
+          },
+          "name": "propString",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "propObject": {
+          "control": {
+            "type": "object"
+          },
+          "name": "propObject",
+          "required": false,
+          "type": {
+            "name": "{ name: string; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ name: string; }"
+            },
+            "defaultValue": {
+              "summary": "{\"name\":\"attrObject\"}"
+            }
+          }
+        },
+        "propBooleanImplicit": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "propBooleanImplicit",
+          "required": false,
+          "type": {
+            "name": "boolean"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "boolean"
+            },
+            "defaultValue": {
+              "summary": "false"
+            }
+          }
+        },
+        "propNumberImplicit": {
+          "control": {
+            "type": "number"
+          },
+          "name": "propNumberImplicit",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {
+              "summary": "0"
+            }
+          }
+        },
+        "propStringImplicit": {
+          "control": {
+            "type": "text"
+          },
+          "name": "propStringImplicit",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"\""
+            }
+          }
+        },
+        "propObjectImplicit": {
+          "control": {
+            "type": "object"
+          },
+          "name": "propObjectImplicit",
+          "required": false,
+          "type": {
+            "name": "{ name: string; }"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "{ name: string; }"
+            },
+            "defaultValue": {
+              "summary": "{\"name\":\"attrObjectImplicit\"}"
+            }
+          }
+        },
+        "propNoType": {
+          "control": {
+            "type": "object"
+          },
+          "name": "propNoType",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "propReadOnly": {
+          "control": {
+            "type": "object"
+          },
+          "name": "propReadOnly",
+          "required": false,
+          "type": {},
+          "table": {
+            "category": "properties",
+            "type": {},
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "units-3-css-vars--default-empty": {
       "id": "units-3-css-vars--default-empty",
@@ -1859,9 +3382,76 @@
           }
         },
         "framework": "web-components",
-        "fileName": 172
+        "fileName": 173
       },
-      "args": {}
+      "args": {},
+      "argTypes": {
+        "message": {
+          "name": "message",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"Hello, CSS Variables!\""
+            }
+          }
+        },
+        "unit-border-width": {
+          "name": "unit-border-width",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "unit-border-color": {
+          "name": "unit-border-color",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "unit-text-color": {
+          "name": "unit-text-color",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "unit-text-size": {
+          "name": "unit-text-size",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     },
     "units-3-css-vars--default-with-args": {
       "id": "units-3-css-vars--default-with-args",
@@ -1879,10 +3469,10 @@
               "type": "text"
             },
             "name": "message",
+            "required": false,
             "type": {
               "name": "string"
             },
-            "required": false,
             "table": {
               "category": "properties",
               "type": {
@@ -1943,9 +3533,81 @@
           }
         },
         "framework": "web-components",
-        "fileName": 172
+        "fileName": 173
       },
       "args": {
+        "message": "Hello, CSS Variables!"
+      },
+      "argTypes": {
+        "message": {
+          "control": {
+            "type": "text"
+          },
+          "name": "message",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"Hello, CSS Variables!\""
+            }
+          }
+        },
+        "unit-border-width": {
+          "name": "unit-border-width",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "unit-border-color": {
+          "name": "unit-border-color",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "unit-text-color": {
+          "name": "unit-text-color",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "unit-text-size": {
+          "name": "unit-text-size",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {
         "message": "Hello, CSS Variables!"
       }
     },
@@ -1969,10 +3631,10 @@
               "type": "text"
             },
             "name": "message",
+            "required": false,
             "type": {
               "name": "string"
             },
-            "required": false,
             "table": {
               "category": "properties",
               "type": {
@@ -1981,6 +3643,54 @@
               "defaultValue": {
                 "summary": "\"Hello, CSS Variables!\""
               }
+            }
+          },
+          "unit-border-width": {
+            "name": "unit-border-width",
+            "required": false,
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "css",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "unit-border-color": {
+            "name": "unit-border-color",
+            "required": false,
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "css",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "unit-text-color": {
+            "name": "unit-text-color",
+            "required": false,
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "css",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "unit-text-size": {
+            "name": "unit-text-size",
+            "required": false,
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "css",
+              "type": {},
+              "defaultValue": {}
             }
           },
           "unitBorderWidth": {
@@ -2018,10 +3728,584 @@
             "type": {
               "name": "string"
             }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 173
+      },
+      "args": {
+        "message": "Hello, CSS Variables!",
+        "unitBorderWidth": "1px",
+        "unitBorderColor": "red",
+        "unitTextColor": "green",
+        "unitTextSize": "20px"
+      },
+      "argTypes": {
+        "message": {
+          "control": {
+            "type": "text"
           },
-          "unit-border-width": {
-            "name": "unit-border-width",
+          "name": "message",
+          "required": false,
+          "type": {
+            "name": "string"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "string"
+            },
+            "defaultValue": {
+              "summary": "\"Hello, CSS Variables!\""
+            }
+          }
+        },
+        "unit-border-width": {
+          "name": "unit-border-width",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "unit-border-color": {
+          "name": "unit-border-color",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "unit-text-color": {
+          "name": "unit-text-color",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "unit-text-size": {
+          "name": "unit-text-size",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "unitBorderWidth": {
+          "control": {
+            "type": "text"
+          },
+          "name": "unitBorderWidth",
+          "type": {
+            "name": "string"
+          }
+        },
+        "unitBorderColor": {
+          "control": {
+            "type": "text"
+          },
+          "name": "unitBorderColor",
+          "type": {
+            "name": "string"
+          }
+        },
+        "unitTextColor": {
+          "control": {
+            "type": "text"
+          },
+          "name": "unitTextColor",
+          "type": {
+            "name": "string"
+          }
+        },
+        "unitTextSize": {
+          "control": {
+            "type": "text"
+          },
+          "name": "unitTextSize",
+          "type": {
+            "name": "string"
+          }
+        }
+      },
+      "initialArgs": {
+        "message": "Hello, CSS Variables!",
+        "unitBorderWidth": "1px",
+        "unitBorderColor": "red",
+        "unitTextColor": "green",
+        "unitTextSize": "20px"
+      }
+    },
+    "units-4-events--actions": {
+      "id": "units-4-events--actions",
+      "kind": "Units/4- Events",
+      "name": "Actions",
+      "story": "Actions",
+      "parameters": {
+        "options": {},
+        "args": {},
+        "argTypes": {
+          "hello": {
+            "name": "hello",
             "required": false,
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "events",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "goodbye": {
+            "name": "goodbye",
+            "required": false,
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "events",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "doHello": {
+            "name": "doHello",
+            "type": {
+              "name": "function"
+            }
+          },
+          "doGoodbye": {
+            "name": "doGoodbye",
+            "type": {
+              "name": "function"
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 174
+      },
+      "args": {},
+      "argTypes": {
+        "hello": {
+          "name": "hello",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "events",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "goodbye": {
+          "name": "goodbye",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "events",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "doHello": {
+          "name": "doHello",
+          "type": {
+            "name": "function"
+          }
+        },
+        "doGoodbye": {
+          "name": "doGoodbye",
+          "type": {
+            "name": "function"
+          }
+        }
+      },
+      "initialArgs": {}
+    },
+    "units-5-slots--empty-slots": {
+      "id": "units-5-slots--empty-slots",
+      "kind": "Units/5- Slots",
+      "name": "Empty Slots",
+      "story": "Empty Slots",
+      "parameters": {
+        "options": {},
+        "argTypes": {
+          "": {
+            "name": "",
+            "required": false,
+            "description": "This component supports an unamed slot",
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "slots",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "header": {
+            "name": "header",
+            "required": false,
+            "description": "This component supports a header slot",
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "slots",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "footer": {
+            "name": "footer",
+            "required": false,
+            "description": "This component supports a footer slot",
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "slots",
+              "type": {},
+              "defaultValue": {}
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 177
+      },
+      "args": {},
+      "argTypes": {
+        "": {
+          "name": "",
+          "required": false,
+          "description": "This component supports an unamed slot",
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "slots",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "header": {
+          "name": "header",
+          "required": false,
+          "description": "This component supports a header slot",
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "slots",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "footer": {
+          "name": "footer",
+          "required": false,
+          "description": "This component supports a footer slot",
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "slots",
+            "type": {},
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
+    },
+    "units-5-slots--filled-slots": {
+      "id": "units-5-slots--filled-slots",
+      "kind": "Units/5- Slots",
+      "name": "Filled Slots",
+      "story": "Filled Slots",
+      "parameters": {
+        "options": {},
+        "args": {
+          "headerContent": "My Header",
+          "bodyContent": "My Body",
+          "footerContent": "My Footer"
+        },
+        "argTypes": {
+          "": {
+            "name": "",
+            "required": false,
+            "description": "This component supports an unamed slot",
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "slots",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "header": {
+            "name": "header",
+            "required": false,
+            "description": "This component supports a header slot",
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "slots",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "footer": {
+            "name": "footer",
+            "required": false,
+            "description": "This component supports a footer slot",
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "slots",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "headerContent": {
+            "control": {
+              "type": "text"
+            },
+            "name": "headerContent",
+            "type": {
+              "name": "string"
+            }
+          },
+          "bodyContent": {
+            "control": {
+              "type": "text"
+            },
+            "name": "bodyContent",
+            "type": {
+              "name": "string"
+            }
+          },
+          "footerContent": {
+            "control": {
+              "type": "text"
+            },
+            "name": "footerContent",
+            "type": {
+              "name": "string"
+            }
+          }
+        },
+        "framework": "web-components",
+        "fileName": 177
+      },
+      "args": {
+        "headerContent": "My Header",
+        "bodyContent": "My Body",
+        "footerContent": "My Footer"
+      },
+      "argTypes": {
+        "": {
+          "name": "",
+          "required": false,
+          "description": "This component supports an unamed slot",
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "slots",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "header": {
+          "name": "header",
+          "required": false,
+          "description": "This component supports a header slot",
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "slots",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "footer": {
+          "name": "footer",
+          "required": false,
+          "description": "This component supports a footer slot",
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "slots",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "headerContent": {
+          "control": {
+            "type": "text"
+          },
+          "name": "headerContent",
+          "type": {
+            "name": "string"
+          }
+        },
+        "bodyContent": {
+          "control": {
+            "type": "text"
+          },
+          "name": "bodyContent",
+          "type": {
+            "name": "string"
+          }
+        },
+        "footerContent": {
+          "control": {
+            "type": "text"
+          },
+          "name": "footerContent",
+          "type": {
+            "name": "string"
+          }
+        }
+      },
+      "initialArgs": {
+        "headerContent": "My Header",
+        "bodyContent": "My Body",
+        "footerContent": "My Footer"
+      }
+    },
+    "units-6-jsdoc--all-annotations": {
+      "id": "units-6-jsdoc--all-annotations",
+      "kind": "Units/6- JSDoc",
+      "name": "All Annotations",
+      "story": "All Annotations",
+      "parameters": {
+        "options": {},
+        "argTypes": {
+          "color": {
+            "name": "color",
+            "required": false,
+            "type": {
+              "name": "\"red\"|\"green\"|\"blue\""
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "\"red\"|\"green\"|\"blue\""
+              },
+              "defaultValue": {
+                "summary": "\"red\""
+              }
+            }
+          },
+          "number1": {
+            "name": "number1",
+            "required": false,
+            "type": {
+              "name": "number"
+            },
+            "table": {
+              "category": "properties",
+              "type": {
+                "summary": "number"
+              },
+              "defaultValue": {}
+            }
+          },
+          "click": {
+            "name": "click",
+            "required": false,
+            "description": "This event is sent when the component is clicked",
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "events",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "doubleclick": {
+            "name": "doubleclick",
+            "required": false,
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "events",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "": {
+            "name": "",
+            "required": false,
+            "description": "This component supports an unamed slot",
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "slots",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "header": {
+            "name": "header",
+            "required": false,
+            "description": "This component supports a header slot",
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "slots",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "footer": {
+            "name": "footer",
+            "required": false,
+            "description": "This component supports a footer slot",
+            "type": {
+              "name": "void"
+            },
+            "table": {
+              "category": "slots",
+              "type": {},
+              "defaultValue": {}
+            }
+          },
+          "--main-bgcolor": {
+            "name": "--main-bgcolor",
+            "required": false,
+            "description": "The background color of the component",
             "type": {
               "name": "void"
             },
@@ -2031,32 +4315,8 @@
               "defaultValue": {}
             }
           },
-          "unit-border-color": {
-            "name": "unit-border-color",
-            "required": false,
-            "type": {
-              "name": "void"
-            },
-            "table": {
-              "category": "css",
-              "type": {},
-              "defaultValue": {}
-            }
-          },
-          "unit-text-color": {
-            "name": "unit-text-color",
-            "required": false,
-            "type": {
-              "name": "void"
-            },
-            "table": {
-              "category": "css",
-              "type": {},
-              "defaultValue": {}
-            }
-          },
-          "unit-text-size": {
-            "name": "unit-text-size",
+          "--main-color": {
+            "name": "--main-color",
             "required": false,
             "type": {
               "name": "void"
@@ -2069,15 +4329,131 @@
           }
         },
         "framework": "web-components",
-        "fileName": 172
+        "fileName": 175
       },
-      "args": {
-        "message": "Hello, CSS Variables!",
-        "unitBorderWidth": "1px",
-        "unitBorderColor": "red",
-        "unitTextColor": "green",
-        "unitTextSize": "20px"
-      }
+      "args": {},
+      "argTypes": {
+        "color": {
+          "name": "color",
+          "required": false,
+          "type": {
+            "name": "\"red\"|\"green\"|\"blue\""
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "\"red\"|\"green\"|\"blue\""
+            },
+            "defaultValue": {
+              "summary": "\"red\""
+            }
+          }
+        },
+        "number1": {
+          "name": "number1",
+          "required": false,
+          "type": {
+            "name": "number"
+          },
+          "table": {
+            "category": "properties",
+            "type": {
+              "summary": "number"
+            },
+            "defaultValue": {}
+          }
+        },
+        "click": {
+          "name": "click",
+          "required": false,
+          "description": "This event is sent when the component is clicked",
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "events",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "doubleclick": {
+          "name": "doubleclick",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "events",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "": {
+          "name": "",
+          "required": false,
+          "description": "This component supports an unamed slot",
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "slots",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "header": {
+          "name": "header",
+          "required": false,
+          "description": "This component supports a header slot",
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "slots",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "footer": {
+          "name": "footer",
+          "required": false,
+          "description": "This component supports a footer slot",
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "slots",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "--main-bgcolor": {
+          "name": "--main-bgcolor",
+          "required": false,
+          "description": "The background color of the component",
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        },
+        "--main-color": {
+          "name": "--main-color",
+          "required": false,
+          "type": {
+            "name": "void"
+          },
+          "table": {
+            "category": "css",
+            "type": {},
+            "defaultValue": {}
+          }
+        }
+      },
+      "initialArgs": {}
     }
   }
 }
