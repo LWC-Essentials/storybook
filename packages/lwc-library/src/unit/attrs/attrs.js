@@ -8,24 +8,28 @@ import { LightningElement, api, buildCustomElementConstructor } from 'lwc';
 export default class UnitAttrs extends LightningElement {
 
     /**
-     * @attr {boolean}
+     * @attr
+     * @type boolean
      */
-    @api attrBoolean = false
+    @api attrBoolean
 
     /**
-     * @attr {number}
+     * @attr
+     * @type number
      */
-    @api attrNumber = 0
+    @api attrNumber
 
     /**
-     * @attr {string}
+     * @attr
+     * @type string
      */
-    @api attrString = ""
+    @api attrString
 
     /**
-     * @attr {Object}
+     * @attr
+     * @type Object
      */
-    @api attrObject = { name: 'attrObject' } 
+    @api attrObject
 
     /**
      * @attr
@@ -53,7 +57,8 @@ export default class UnitAttrs extends LightningElement {
     @api attrNoType
 
     /**
-     * @attr {string}
+     * @attr
+     * @type string
      * @readonly
      */
     @api attrReadOnly

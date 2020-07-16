@@ -11,6 +11,10 @@ import HelloTime from 'hello/time';
 import UnitAttrs from 'unit/attrs';
 import UnitProps from 'unit/props';
 import UnitCssVars from 'unit/cssvars';
+import UnitJsDoc from 'unit/jsdoc';
+import UnitEvents from 'unit/events';
+import UnitSlots from 'unit/slots';
+import WcUnitSlots from 'wc/unit-slots';
 
 import WcTime from 'wc/time';
 
@@ -25,3 +29,7 @@ buildAndRegisterCustomElement('wc-time', WcTime);
 buildAndRegisterCustomElement('unit-attrs', UnitAttrs);
 buildAndRegisterCustomElement('unit-props', UnitProps);
 buildAndRegisterCustomElement('unit-cssvars', UnitCssVars);
+buildAndRegisterCustomElement('unit-jsdoc', UnitJsDoc);
+buildAndRegisterCustomElement('unit-events', UnitEvents);
+buildAndRegisterCustomElement('unit-slots', UnitSlots);
+buildAndRegisterCustomElement('wc-unit-slots', WcUnitSlots);

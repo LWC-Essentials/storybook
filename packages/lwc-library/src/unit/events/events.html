@@ -1,0 +1,16 @@
+<template>
+    <h2>This component sends custom events</h2>
+
+    <p>
+        It can send both 'hello' and 'goodbye' events.<br/>
+        Click the buttons bellow and look at the actions panel
+        where teh events are recorded.
+    </p>
+
+    <div>
+        <button type="button" onclick={helloClick}>Click me to send a custom hello event!</button>
+        &nbsp;&nbsp;
+        <button type="button" onclick={goodbyeClick}>Click me to send a custom goodbye event!</button>
+    </div>
+
+</template>
