@@ -12,12 +12,13 @@ export default class Greetings extends LightningElement {
     /**
      * This is a property that can be set from an attribute
      * 
-     * @attr
+     * @attribute
      */
     @api name = ''
 
     /**
      * This is a property that comes from a wire adapter
+     * @readonly
      */
     @wire(Time) time = {};
 
@@ -26,8 +27,11 @@ export default class Greetings extends LightningElement {
      * 
      * @property
      */
-    message = 'Glad to see you'
+    @api message = 'Glad to see you'
 
+    /**
+     * @readonly
+     */
     get greetings() {
         return `${this.message}, ${this.name}`
     }

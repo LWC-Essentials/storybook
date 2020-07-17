@@ -24,7 +24,6 @@ export const ControlsCustom = (args) => html`
 ControlsCustom.argTypes = {
     // Completely hide the time property
     time: { table: { disable: true } },
-    // Disable the control on message & greetings
-    message: { control: { disable: true } },
+    // Disable the control on greetings
     greetings: { control: { disable: true } },
 };
