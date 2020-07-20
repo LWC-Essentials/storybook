@@ -237,8 +237,7 @@
           },
           "message": {
             "control": {
-              "type": "text",
-              "disable": true
+              "type": "text"
             },
             "name": "message",
             "required": false,
@@ -323,8 +322,7 @@
         },
         "message": {
           "control": {
-            "type": "text",
-            "disable": true
+            "type": "text"
           },
           "name": "message",
           "required": false,
