@@ -18,27 +18,27 @@
       "fileName": 172,
       "framework": "web-components"
     },
-    "Units/1- Attributes": {
+    "Patterns/1- Attributes": {
       "fileName": 173,
       "framework": "web-components"
     },
-    "Units/3- CSS Vars": {
+    "Patterns/3- CSS Vars": {
       "fileName": 174,
       "framework": "web-components"
     },
-    "Units/4- Events": {
+    "Patterns/4- Events": {
       "fileName": 175,
       "framework": "web-components"
     },
-    "Units/6- JSDoc": {
+    "Patterns/6- JSDoc": {
       "fileName": 176,
       "framework": "web-components"
     },
-    "Units/2- Properties": {
+    "Patterns/2- Properties": {
       "fileName": 177,
       "framework": "web-components"
     },
-    "Units/5- Slots": {
+    "Patterns/5- Slots": {
       "fileName": 178,
       "framework": "web-components"
     }
@@ -154,133 +154,133 @@
         "__isArgsStory": false
       }
     },
-    "units-1-attributes--default-empty": {
-      "id": "units-1-attributes--default-empty",
+    "patterns-1-attributes--default-empty": {
+      "id": "patterns-1-attributes--default-empty",
       "name": "Default Empty",
-      "kind": "Units/1- Attributes",
+      "kind": "Patterns/1- Attributes",
       "story": "Default Empty",
       "parameters": {
-        "__id": "units-1-attributes--default-empty",
+        "__id": "patterns-1-attributes--default-empty",
         "__isArgsStory": false
       }
     },
-    "units-1-attributes--default-with-args": {
-      "id": "units-1-attributes--default-with-args",
+    "patterns-1-attributes--default-with-args": {
+      "id": "patterns-1-attributes--default-with-args",
       "name": "Default With Args",
-      "kind": "Units/1- Attributes",
+      "kind": "Patterns/1- Attributes",
       "story": "Default With Args",
       "parameters": {
-        "__id": "units-1-attributes--default-with-args",
+        "__id": "patterns-1-attributes--default-with-args",
         "__isArgsStory": true
       }
     },
-    "units-1-attributes--default-with-spread-args": {
-      "id": "units-1-attributes--default-with-spread-args",
+    "patterns-1-attributes--default-with-spread-args": {
+      "id": "patterns-1-attributes--default-with-spread-args",
       "name": "Default With Spread Args",
-      "kind": "Units/1- Attributes",
+      "kind": "Patterns/1- Attributes",
       "story": "Default With Spread Args",
       "parameters": {
-        "__id": "units-1-attributes--default-with-spread-args",
+        "__id": "patterns-1-attributes--default-with-spread-args",
         "__isArgsStory": true
       }
     },
-    "units-2-properties--default-empty": {
-      "id": "units-2-properties--default-empty",
+    "patterns-2-properties--default-empty": {
+      "id": "patterns-2-properties--default-empty",
       "name": "Default Empty",
-      "kind": "Units/2- Properties",
+      "kind": "Patterns/2- Properties",
       "story": "Default Empty",
       "parameters": {
-        "__id": "units-2-properties--default-empty",
+        "__id": "patterns-2-properties--default-empty",
         "__isArgsStory": false
       }
     },
-    "units-2-properties--default-with-args": {
-      "id": "units-2-properties--default-with-args",
+    "patterns-2-properties--default-with-args": {
+      "id": "patterns-2-properties--default-with-args",
       "name": "Default With Args",
-      "kind": "Units/2- Properties",
+      "kind": "Patterns/2- Properties",
       "story": "Default With Args",
       "parameters": {
-        "__id": "units-2-properties--default-with-args",
+        "__id": "patterns-2-properties--default-with-args",
         "__isArgsStory": true
       }
     },
-    "units-2-properties--default-with-spread-args": {
-      "id": "units-2-properties--default-with-spread-args",
+    "patterns-2-properties--default-with-spread-args": {
+      "id": "patterns-2-properties--default-with-spread-args",
       "name": "Default With Spread Args",
-      "kind": "Units/2- Properties",
+      "kind": "Patterns/2- Properties",
       "story": "Default With Spread Args",
       "parameters": {
-        "__id": "units-2-properties--default-with-spread-args",
+        "__id": "patterns-2-properties--default-with-spread-args",
         "__isArgsStory": true
       }
     },
-    "units-3-css-vars--default-empty": {
-      "id": "units-3-css-vars--default-empty",
+    "patterns-3-css-vars--default-empty": {
+      "id": "patterns-3-css-vars--default-empty",
       "name": "Default Empty",
-      "kind": "Units/3- CSS Vars",
+      "kind": "Patterns/3- CSS Vars",
       "story": "Default Empty",
       "parameters": {
-        "__id": "units-3-css-vars--default-empty",
+        "__id": "patterns-3-css-vars--default-empty",
         "__isArgsStory": false
       }
     },
-    "units-3-css-vars--default-with-args": {
-      "id": "units-3-css-vars--default-with-args",
+    "patterns-3-css-vars--default-with-args": {
+      "id": "patterns-3-css-vars--default-with-args",
       "name": "Default With Args",
-      "kind": "Units/3- CSS Vars",
+      "kind": "Patterns/3- CSS Vars",
       "story": "Default With Args",
       "parameters": {
-        "__id": "units-3-css-vars--default-with-args",
+        "__id": "patterns-3-css-vars--default-with-args",
         "__isArgsStory": true
       }
     },
-    "units-3-css-vars--set-variables": {
-      "id": "units-3-css-vars--set-variables",
+    "patterns-3-css-vars--set-variables": {
+      "id": "patterns-3-css-vars--set-variables",
       "name": "Set Variables",
-      "kind": "Units/3- CSS Vars",
+      "kind": "Patterns/3- CSS Vars",
       "story": "Set Variables",
       "parameters": {
-        "__id": "units-3-css-vars--set-variables",
+        "__id": "patterns-3-css-vars--set-variables",
         "__isArgsStory": true
       }
     },
-    "units-4-events--actions": {
-      "id": "units-4-events--actions",
+    "patterns-4-events--actions": {
+      "id": "patterns-4-events--actions",
       "name": "Actions",
-      "kind": "Units/4- Events",
+      "kind": "Patterns/4- Events",
       "story": "Actions",
       "parameters": {
-        "__id": "units-4-events--actions",
+        "__id": "patterns-4-events--actions",
         "__isArgsStory": true
       }
     },
-    "units-5-slots--empty-slots": {
-      "id": "units-5-slots--empty-slots",
+    "patterns-5-slots--empty-slots": {
+      "id": "patterns-5-slots--empty-slots",
       "name": "Empty Slots",
-      "kind": "Units/5- Slots",
+      "kind": "Patterns/5- Slots",
       "story": "Empty Slots",
       "parameters": {
-        "__id": "units-5-slots--empty-slots",
+        "__id": "patterns-5-slots--empty-slots",
         "__isArgsStory": false
       }
     },
-    "units-5-slots--filled-slots": {
-      "id": "units-5-slots--filled-slots",
+    "patterns-5-slots--filled-slots": {
+      "id": "patterns-5-slots--filled-slots",
       "name": "Filled Slots",
-      "kind": "Units/5- Slots",
+      "kind": "Patterns/5- Slots",
       "story": "Filled Slots",
       "parameters": {
-        "__id": "units-5-slots--filled-slots",
+        "__id": "patterns-5-slots--filled-slots",
         "__isArgsStory": true
       }
     },
-    "units-6-jsdoc--all-annotations": {
-      "id": "units-6-jsdoc--all-annotations",
+    "patterns-6-jsdoc--all-annotations": {
+      "id": "patterns-6-jsdoc--all-annotations",
       "name": "All Annotations",
-      "kind": "Units/6- JSDoc",
+      "kind": "Patterns/6- JSDoc",
       "story": "All Annotations",
       "parameters": {
-        "__id": "units-6-jsdoc--all-annotations",
+        "__id": "patterns-6-jsdoc--all-annotations",
         "__isArgsStory": false
       }
     }
