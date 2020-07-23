@@ -9,6 +9,7 @@
     "start": "lerna run start --scope lwc-app --stream",
     "clean": "lerna run clean --stream",
     "test": "lerna run test --stream",
+    "build-storybook": "echo not from here!",
     "build-static": "lerna run storybook:build-static --stream",
     "deploy-static": "gh-pages -d static-site -u priandsf@salesforce.com -m \"Storybook static site\""
   },

@@ -67,7 +67,7 @@
         "storybook:meta-vs": "web-component-analyzer src --format vscode --outFiles .storybook/build/documentation.md",
         "storybook:buildlwc": "rollup -c ./.storybook/rollup.config.js",
         "storybook:buildlwcw": "rollup -w -c ./.storybook/rollup.config.js",
-        "storybook:start": "start-storybook -s ./dist -p 6010",
+        "storybook:start": "start-storybook -s ./dist -p 6006",
         "storybook:build-static": "yarn storybook:build && yarn build-storybook",
         "build-storybook": "build-storybook -c .storybook -o ../../static-site/lwc-library && sb extract ../../static-site/lwc-library  ../../static-site/lwc-library/stories.json"
     },
