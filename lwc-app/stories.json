@@ -1,32 +1,36 @@
 {
+  "v": 2,
+  "globalParameters": {},
+  "kindParameters": {
+    "Application Main": {
+      "fileName": 167,
+      "framework": "web-components"
+    },
+    "Welcome": {
+      "fileName": 168,
+      "framework": "web-components"
+    }
+  },
   "stories": {
     "application-main--default": {
       "id": "application-main--default",
-      "kind": "Application Main",
       "name": "Default",
+      "kind": "Application Main",
       "story": "Default",
       "parameters": {
-        "argTypes": {},
-        "framework": "web-components",
-        "fileName": 166
-      },
-      "args": {},
-      "argTypes": {},
-      "initialArgs": {}
+        "__id": "application-main--default",
+        "__isArgsStory": false
+      }
     },
     "welcome--welcome": {
       "id": "welcome--welcome",
-      "kind": "Welcome",
       "name": "Welcome",
+      "kind": "Welcome",
       "story": "Welcome",
       "parameters": {
-        "argTypes": {},
-        "framework": "web-components",
-        "fileName": 167
-      },
-      "args": {},
-      "argTypes": {},
-      "initialArgs": {}
+        "__id": "welcome--welcome",
+        "__isArgsStory": false
+      }
     }
   }
 }
