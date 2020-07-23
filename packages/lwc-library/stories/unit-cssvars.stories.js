@@ -19,14 +19,14 @@ DefaultWithArgs.args = {
     message: 'Hello, CSS Variables!',
 }
 
-export const SetVariables = ({message,unitBorderWidth,unitBorderColor,unitTextColor,unitTextSize}) => {
+export const SetVariables = ({message,...args}) => {
     return html`
         <style>
             .vars {
-                --unit-border-width: ${unitBorderWidth};
-                --unit-border-color: ${unitBorderColor};
-                --unit-text-color: ${unitTextColor};
-                --unit-text-size: ${unitTextSize};
+                --unit-border-width: ${args['--unit-border-width']};
+                --unit-border-color: ${args['--unit-border-color']};
+                --unit-text-color: ${args['--unit-text-color']};
+                --unit-text-size: ${args['--unit-text-size']};
             }
         </style>
         <div class='vars'>
@@ -39,8 +39,8 @@ export const SetVariables = ({message,unitBorderWidth,unitBorderColor,unitTextCo
 };
 SetVariables.args = {
     message: 'Hello, CSS Variables!',
-    unitBorderWidth: '1px',
-    unitBorderColor: 'red',
-    unitTextColor: 'green',
-    unitTextSize: '20px'
+    "--unit-border-width": '1px',
+    "--unit-border-color": 'red',
+    "--unit-text-color": 'green',
+    "--unit-text-size": '20px'
 }

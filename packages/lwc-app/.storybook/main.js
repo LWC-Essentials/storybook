@@ -1,17 +1,3 @@
-module.exports = {
-    stories: ['../stories/**/*.stories.@(js|mdx|md)'],
-  logLevel: 'debug',
-  addons: [
-    '@storybook/addon-docs',
-    '@storybook/addon-controls',
-    '@storybook/addon-a11y',
-    '@storybook/addon-actions',
-    '@storybook/addon-backgrounds',
-    '@storybook/addon-links',
-    '@storybook/addon-storysource',
-    '@storybook/addon-viewport',
-  ],
-};
 // main.js
 // https://storybook.js.org/docs/configurations/overview/#mainjs-is-a--preset
 
