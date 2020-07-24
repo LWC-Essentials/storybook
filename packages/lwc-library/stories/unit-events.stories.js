@@ -1,7 +1,7 @@
 import { html } from 'lit-html';
 import { action } from '@storybook/addon-actions';
 export default {
-    title: 'Units/4- Events',
+    title: 'Patterns/4- Events',
     component: 'unit-events'
 };
 

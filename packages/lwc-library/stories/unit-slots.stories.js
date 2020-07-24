@@ -1,7 +1,7 @@
 import { html } from 'lit-html';
 
 export default {
-    title: 'Units/5- Slots',
+    title: 'Patterns/5- Slots',
     component: 'unit-slots'
 };
 

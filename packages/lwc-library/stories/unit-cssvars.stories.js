@@ -1,7 +1,7 @@
 import { html } from 'lit-html';
 
 export default {
-    title: 'Units/3- CSS Vars',
+    title: 'Patterns/3- CSS Vars',
     component: 'unit-cssvars'
 };
 

@@ -2,7 +2,7 @@ import { html } from 'lit-html';
 import { spreadProps } from '@open-wc/lit-helpers';
 
 export default {
-    title: 'Units/2- Properties',
+    title: 'Patterns/2- Properties',
     component: 'unit-props'
 };
 
