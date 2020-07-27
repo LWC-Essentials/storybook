@@ -244,6 +244,16 @@
         "__isArgsStory": true
       }
     },
+    "patterns-3-css-vars--set-variables-as-style": {
+      "id": "patterns-3-css-vars--set-variables-as-style",
+      "name": "Set Variables As Style",
+      "kind": "Patterns/3- CSS Vars",
+      "story": "Set Variables As Style",
+      "parameters": {
+        "__id": "patterns-3-css-vars--set-variables-as-style",
+        "__isArgsStory": true
+      }
+    },
     "patterns-4-events--actions": {
       "id": "patterns-4-events--actions",
       "name": "Actions",
