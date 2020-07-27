@@ -29,14 +29,33 @@ export const SetVariables = ({message,...args}) => html`
     }
     </style>
     <div class='vars'>
-    <unit-cssvars
-        message="${message}"
-    >
-    </unit-cssvars>
+        <unit-cssvars
+            message="${message}"
+        >
+        </unit-cssvars>
     </div>
 `
 ;
 SetVariables.args = {
+    message: 'Hello, CSS Variables!',
+    "--unit-border-width": '1px',
+    "--unit-border-color": 'red',
+    "--unit-text-color": 'green',
+    "--unit-text-size": '20px',
+}
+
+export const SetVariablesAsStyle = ({message,...args}) => html`
+    <unit-cssvars
+        message="${message}"
+        style="--unit-border-width: ${args['--unit-border-width']};
+               --unit-border-color: ${args['--unit-border-color']}; 
+               --unit-text-color: ${args['--unit-text-color']}; 
+               --unit-text-size: ${args['--unit-text-size']}"
+    >
+    </unit-cssvars>
+`
+;
+SetVariablesAsStyle.args = {
     message: 'Hello, CSS Variables!',
     "--unit-border-width": '1px',
     "--unit-border-color": 'red',
