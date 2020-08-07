@@ -6,5 +6,9 @@
 import buildAndRegisterCustomElement from '../.storybook/utils/build-custom-element';
 import AppMain from 'app/main';
 
+import Inherit3 from 'unit/inherit3';
+
 // Register components
 buildAndRegisterCustomElement('app-main', AppMain);
+
+buildAndRegisterCustomElement('unit-inherit3', Inherit3);

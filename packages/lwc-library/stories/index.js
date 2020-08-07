@@ -13,6 +13,8 @@ import UnitProps from 'unit/props';
 import UnitCssVars from 'unit/cssvars';
 import UnitJsDoc from 'unit/jsdoc';
 import UnitEvents from 'unit/events';
+import UnitInherit from 'unit/inherit';
+import UnitInherit2 from 'unit/inherit2';
 import UnitSlots from 'unit/slots';
 import WcUnitSlots from 'wc/unit-slots';
 
@@ -31,5 +33,7 @@ buildAndRegisterCustomElement('unit-props', UnitProps);
 buildAndRegisterCustomElement('unit-cssvars', UnitCssVars);
 buildAndRegisterCustomElement('unit-jsdoc', UnitJsDoc);
 buildAndRegisterCustomElement('unit-events', UnitEvents);
+buildAndRegisterCustomElement('unit-inherit', UnitInherit);
+buildAndRegisterCustomElement('unit-inherit2', UnitInherit2);
 buildAndRegisterCustomElement('unit-slots', UnitSlots);
 buildAndRegisterCustomElement('wc-unit-slots', WcUnitSlots);

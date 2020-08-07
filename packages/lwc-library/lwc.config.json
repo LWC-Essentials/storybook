@@ -9,6 +9,7 @@
      ],
     "expose": [
         "hello/world",
-        "hello/greetings"
+        "hello/greetings",
+        "unit/inherit2"
     ]
 }

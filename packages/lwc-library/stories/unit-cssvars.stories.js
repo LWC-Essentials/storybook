@@ -45,14 +45,18 @@ SetVariables.args = {
 }
 
 export const SetVariablesAsStyle = ({message,...args}) => html`
-    <unit-cssvars
-        message="${message}"
-        style="--unit-border-width: ${args['--unit-border-width']};
-               --unit-border-color: ${args['--unit-border-color']}; 
-               --unit-text-color: ${args['--unit-text-color']}; 
-               --unit-text-size: ${args['--unit-text-size']}"
-    >
-    </unit-cssvars>
+    <div>
+        <unit-cssvars
+            message="${message}"
+            style="--unit-border-width: ${args['--unit-border-width']};
+                --unit-border-color: ${args['--unit-border-color']}; 
+                --unit-text-color: ${args['--unit-text-color']}; 
+                --unit-text-size: ${args['--unit-text-size']}"
+        >
+        </unit-cssvars>
+        <unit-cssvars
+        </unit-cssvars>
+    </div>
 `
 ;
 SetVariablesAsStyle.args = {
