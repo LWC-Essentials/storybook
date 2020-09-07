@@ -125,24 +125,20 @@ export const default_ = () => html`
 ### Documenting Web Components
 Documentation which is a great strengh of Storybook, can be at least partially generated. The WebComponent organization comes with a meta-data format to desbribe web components: [custom-elements.json](https://github.com/webcomponents/custom-elements-json). Warning: this format is not yet a standard and can evolve in the near future. It currently contains enough information to describe a component, its attributes, properties, events, CSS variables...  
 
-Writing or maintaining such a file manually is cumbersome, so we better generate it from the component source files. This task is achieved by a third party library: [web-component-analyzer](https://github.com/runem/web-component-analyzer#readme). As Javascript doesn't describe all the metadata that we need, the source code must be enriched with [JSDoc](https://jsdoc.app/) information. In particular, web-component-analyzer supports a set of web components specific tags describes [here](https://www.npmjs.com/package/web-component-analyzer#%E2%9E%A4-how-to-document-your-components-using-jsdoc). 
-
-In order for web components to be recognized by web-component-analyzer, it currently must feature an element tag in its header. Moreover, the attributes, properties, ... should be property taggesd as well:  
+Writing or maintaining such a file manually is cumbersome, so we better generate it from the component source files. This task is achieved by a third party library: [web-component-analyzer](https://github.com/runem/web-component-analyzer#readme). Version 1.2.0+ of the library now understands LWC so it can find the LWC components based on common constructs including the LWC specific decorators, like @api. see: [web-component-analyzer for LWC](https://github.com/runem/web-component-analyzer/blob/master/ANALYZE.md#lwc).
+In order to refine the Javascript metadata, the source code can be enriched with [JSDoc](https://jsdoc.app/) information. See how web-component-analyzer supports a set of web components specific tags described [here](https://www.npmjs.com/package/web-component-analyzer#%E2%9E%A4-how-to-document-your-components-using-jsdoc). 
 
 ```js
 /**
  * LWC Component taggeg with JSDoc comments.
- * @element my-component
  */
 export default class MyComponent extends LightningElement {
     /**
-     * name is an attribute
-     * @attr
+     * name is a public attribute
      */
     @api name = ''
     /**
-     * message is a property
-     * @ property
+     * message is a private property
      */
     message = ''
     
