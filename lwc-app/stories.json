@@ -6,8 +6,12 @@
       "fileName": 167,
       "framework": "web-components"
     },
-    "Welcome": {
+    "Inherit From Library": {
       "fileName": 168,
+      "framework": "web-components"
+    },
+    "Welcome": {
+      "fileName": 169,
       "framework": "web-components"
     }
   },
@@ -19,6 +23,16 @@
       "story": "Default",
       "parameters": {
         "__id": "application-main--default",
+        "__isArgsStory": false
+      }
+    },
+    "inherit-from-library--default": {
+      "id": "inherit-from-library--default",
+      "name": "Default",
+      "kind": "Inherit From Library",
+      "story": "Default",
+      "parameters": {
+        "__id": "inherit-from-library--default",
         "__isArgsStory": false
       }
     },

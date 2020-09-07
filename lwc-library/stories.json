@@ -3,43 +3,47 @@
   "globalParameters": {},
   "kindParameters": {
     "Docs/Greetings": {
-      "fileName": 169,
-      "framework": "web-components"
-    },
-    "Hello Greetings": {
       "fileName": 170,
       "framework": "web-components"
     },
-    "Internal/Display time": {
+    "Hello Greetings": {
       "fileName": 171,
       "framework": "web-components"
     },
-    "Hello World": {
+    "Internal/Display time": {
       "fileName": 172,
       "framework": "web-components"
     },
-    "Patterns/1- Attributes": {
+    "Hello World": {
       "fileName": 173,
       "framework": "web-components"
     },
-    "Patterns/3- CSS Vars": {
+    "Patterns/1- Attributes": {
       "fileName": 174,
       "framework": "web-components"
     },
-    "Patterns/4- Events": {
+    "Patterns/2- Properties": {
       "fileName": 175,
       "framework": "web-components"
     },
-    "Patterns/6- JSDoc": {
+    "Patterns/3- CSS Vars": {
       "fileName": 176,
       "framework": "web-components"
     },
-    "Patterns/2- Properties": {
+    "Patterns/4- Events": {
       "fileName": 177,
       "framework": "web-components"
     },
     "Patterns/5- Slots": {
       "fileName": 178,
+      "framework": "web-components"
+    },
+    "Patterns/6- JSDoc": {
+      "fileName": 179,
+      "framework": "web-components"
+    },
+    "Patterns/7- Inherit": {
+      "fileName": 180,
       "framework": "web-components"
     }
   },
@@ -291,6 +295,16 @@
       "story": "All Annotations",
       "parameters": {
         "__id": "patterns-6-jsdoc--all-annotations",
+        "__isArgsStory": false
+      }
+    },
+    "patterns-7-inherit--inherited-component": {
+      "id": "patterns-7-inherit--inherited-component",
+      "name": "Inherited Component",
+      "kind": "Patterns/7- Inherit",
+      "story": "Inherited Component",
+      "parameters": {
+        "__id": "patterns-7-inherit--inherited-component",
         "__isArgsStory": false
       }
     }
