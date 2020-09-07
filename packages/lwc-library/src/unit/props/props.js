@@ -2,70 +2,58 @@ import { LightningElement, api, buildCustomElementConstructor } from 'lwc';
 
 /**
  * A component exposing properties.
- * 
- * @element unit-props
  */
 export default class UnitProps extends LightningElement {
 
     /**
-     * @prop {boolean}
+     * @type {boolean}
      */
-    @api
     propBoolean = false
 
     /**
-     * @prop {number}
+     * @type {number}
      */
-    @api
     propNumber = 0
 
     /**
-     * @prop {string}
+     * @type {string}
      */
-    @api
     propString = ""
 
     /**
-     * @prop {Object}
+     * @type {Object}
      */
-    @api
     propObject = { name: 'attrObject' } 
 
     /**
-     * @prop
+     * @type
      */
-    @api
     propBooleanImplicit = false
 
     /**
-     * @prop
+     * @type
      */
-    @api
     propNumberImplicit = 0
 
     /**
-     * @prop
+     * @type
      */
-    @api
     propStringImplicit = ""
 
     /**
-     * @prop
+     * @type
      */
-    @api
     propObjectImplicit = { name: 'attrObjectImplicit' } 
 
     /**
-     * @prop
+     * @type
      */
-    @api
     propNoType
 
     /**
-     * @prop {string}
+     * @type {string}
      * @readonly
      */
-    @api
     propReadOnly
 
     get _componentData() {

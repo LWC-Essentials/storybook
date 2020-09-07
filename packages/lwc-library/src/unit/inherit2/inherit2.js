@@ -3,7 +3,6 @@ import BaseInherit from '../inherit/inherit'
 
 /**
  * Inherit component 2.
- * @element unit-inherit2
  */
 export default class Inherit extends BaseInherit {
 

@@ -3,7 +3,6 @@ import Inherit2 from 'unit/inherit2'
 
 /**
  * Inherit component 3
- * @element unit-inherit3
  */
 export default class Inherit extends Inherit2 {
 

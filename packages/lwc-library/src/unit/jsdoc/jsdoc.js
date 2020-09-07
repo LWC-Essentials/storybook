@@ -15,8 +15,6 @@ import { LightningElement, api, buildCustomElementConstructor } from 'lwc';
  * 
  * @csspart textspan - The span tag containing the text
  * @csspart iconimg
- * 
- * @element unit-jsdoc
  */
 export default class UnitJSDocs extends LightningElement {
 

@@ -7,13 +7,10 @@ import { LightningElement, api, buildCustomElementConstructor } from 'lwc';
  * @cssprop unit-border-color
  * @cssprop unit-text-color
  * @cssprop unit-text-size
- * 
- * @element unit-cssvars
  */
 export default class UnitCssVars extends LightningElement {
 
     /**
-     * @attr
      */
     @api message = "Hello, CSS Variables!"
 

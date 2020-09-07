@@ -9,14 +9,11 @@ import { Time } from '../../wire/time'
  *      minutes: 18,  
  *      seconds: 44  
  *  }
- * 
- * @element hello-time
  */
 export default class DisplayTime extends LightningElement {
 
     /**
      * Time passed as a complex object.
-     * @attr
      */
     @api time = {hours:0,minutes:0,seconds:0}
 

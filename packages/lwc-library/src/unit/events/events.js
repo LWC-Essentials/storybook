@@ -2,8 +2,6 @@ import { LightningElement, api, buildCustomElementConstructor } from 'lwc';
 
 /**
  * A component that sends custom events
- * 
- * @element unit-events
  */
 export default class UnitEvents extends LightningElement {
  
